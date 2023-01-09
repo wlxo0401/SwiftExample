@@ -1,24 +1,27 @@
 //
-//  LineChartViewController.swift
+//  MultiLineChartViewController.swift
 //  ChartsLibTest
 //
-//  Created by 김지태 on 2022/11/10.
+//  Created by 김지태 on 2023/01/09.
 //
 
 import UIKit
 import Charts
 
-class LineChartViewController: UIViewController {
+class MultiLineChartViewController: UIViewController {
 
     @IBOutlet weak var myLineChart: LineChartView!
-
+    
     var dayData: [String] = ["11월02일", "11월03일", "11월04일", "11월05일", "11월06일", "11월07일", "11월08일", "11월09일", "11월10일"]
-    var priceData: [Double]! = [100, 345, 20, 120, 90, 300, 450, 220, 120]
-
-
+    
+    var priceDataOne: [Double]! = [100, 345, 20, 120, 90, 300, 450, 220, 120]
+    var priceDataTwo: [Double]! = [50, 200, 200, 300, 150, 250, 200, 400, 200]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Do any additional setup after loading the view.
+        
         // 기본 출력 텍스트
         self.myLineChart.noDataText = "출력 데이터가 없습니다."
         // 기본 출력 텍스트 폰트
@@ -30,20 +33,30 @@ class LineChartViewController: UIViewController {
         // 값마다 구분하고 싶은 valueFormatter 예) 날짜, 이름
         self.myLineChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: dayData)
         // 값마다 구분하고 싶은 valueFormatter를 개수만큼 출력
-        self.myLineChart.xAxis.setLabelCount(priceData.count, force: false)
+        self.myLineChart.xAxis.setLabelCount(dayData.count, force: false)
 
-
-        self.setLineData(lineChartView: self.myLineChart, lineChartDataEntries: self.entryData(values: self.priceData))
+        // 추가하고 싶은 데이터
+        let lineChartDataEntries: [[ChartDataEntry]] = [self.entryData(values: self.priceDataOne),
+                                                        self.entryData(values: self.priceDataTwo)]
+        
+        // 라인 차트 그리기
+        self.setLineData(lineChartView: self.myLineChart, lineChartDataEntries: lineChartDataEntries)
     }
 
-
     // 데이터 적용하기
-    func setLineData(lineChartView: LineChartView, lineChartDataEntries: [ChartDataEntry]) {
+    func setLineData(lineChartView: LineChartView, lineChartDataEntries: [[ChartDataEntry]]) {
         // Entry들을 이용해 Data Set 만들기
+        var dataSets: [LineChartDataSet] = []
         
-        let lineChartdataSet = LineChartDataSet(entries: lineChartDataEntries, label: "매출")
+        // 데이터 생성
+        for entry in lineChartDataEntries {
+            let lineChartdataSet = LineChartDataSet(entries: entry, label: "매출")
+            dataSets.append(lineChartdataSet)
+        }
+        
         // DataSet을 차트 데이터로 넣기
-        let lineChartData = LineChartData(dataSet: lineChartdataSet)
+        let lineChartData = LineChartData(dataSets: dataSets)
+        
         // 데이터 출력
         lineChartView.data = lineChartData
     }
@@ -60,5 +73,4 @@ class LineChartViewController: UIViewController {
         // 반환
         return lineDataEntries
     }
-
 }

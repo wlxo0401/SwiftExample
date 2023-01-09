@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		394625EF291D18780074488F /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394625EE291D18780074488F /* LineChartViewController.swift */; };
 		394626052923B1120074488F /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394626042923B1120074488F /* PieChartViewController.swift */; };
+		39B702E7296C3EEF0075DAC4 /* MultiLineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B702E6296C3EEF0075DAC4 /* MultiLineChartViewController.swift */; };
 		39D19F5229191E4D0000F4EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D19F5129191E4D0000F4EB /* AppDelegate.swift */; };
 		39D19F5429191E4D0000F4EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D19F5329191E4D0000F4EB /* SceneDelegate.swift */; };
 		39D19F5629191E4D0000F4EB /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D19F5529191E4D0000F4EB /* BarChartViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		394625EE291D18780074488F /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
 		394626042923B1120074488F /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
+		39B702E6296C3EEF0075DAC4 /* MultiLineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLineChartViewController.swift; sourceTree = "<group>"; };
 		39D19F4E29191E4D0000F4EB /* ChartsLibTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsLibTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D19F5129191E4D0000F4EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39D19F5329191E4D0000F4EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +48,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39B702E3296C3EBC0075DAC4 /* BarChart */ = {
+			isa = PBXGroup;
+			children = (
+				39D19F5529191E4D0000F4EB /* BarChartViewController.swift */,
+			);
+			path = BarChart;
+			sourceTree = "<group>";
+		};
+		39B702E4296C3EC50075DAC4 /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				394625EE291D18780074488F /* LineChartViewController.swift */,
+				39B702E6296C3EEF0075DAC4 /* MultiLineChartViewController.swift */,
+			);
+			path = LineChart;
+			sourceTree = "<group>";
+		};
+		39B702E5296C3ECE0075DAC4 /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				394626042923B1120074488F /* PieChartViewController.swift */,
+			);
+			path = PieChart;
+			sourceTree = "<group>";
+		};
 		39D19F4529191E4D0000F4EB = {
 			isa = PBXGroup;
 			children = (
@@ -69,9 +96,9 @@
 			children = (
 				39D19F5129191E4D0000F4EB /* AppDelegate.swift */,
 				39D19F5329191E4D0000F4EB /* SceneDelegate.swift */,
-				39D19F5529191E4D0000F4EB /* BarChartViewController.swift */,
-				394625EE291D18780074488F /* LineChartViewController.swift */,
-				394626042923B1120074488F /* PieChartViewController.swift */,
+				39B702E3296C3EBC0075DAC4 /* BarChart */,
+				39B702E4296C3EC50075DAC4 /* LineChart */,
+				39B702E5296C3ECE0075DAC4 /* PieChart */,
 				39D19F5729191E4D0000F4EB /* Main.storyboard */,
 				39D19F5A29191E4D0000F4EB /* Assets.xcassets */,
 				39D19F5C29191E4D0000F4EB /* LaunchScreen.storyboard */,
@@ -217,6 +244,7 @@
 				394625EF291D18780074488F /* LineChartViewController.swift in Sources */,
 				39D19F5229191E4D0000F4EB /* AppDelegate.swift in Sources */,
 				39D19F5429191E4D0000F4EB /* SceneDelegate.swift in Sources */,
+				39B702E7296C3EEF0075DAC4 /* MultiLineChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
