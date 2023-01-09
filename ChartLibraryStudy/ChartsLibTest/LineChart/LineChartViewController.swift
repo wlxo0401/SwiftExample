@@ -33,7 +33,6 @@ class LineChartViewController: UIViewController {
         self.myLineChart.xAxis.setLabelCount(priceData.count, force: false)
 
         
-        
         self.setLineData(lineChartView: self.myLineChart, lineChartDataEntries: self.entryData(values: self.priceData))
     }
 
@@ -46,6 +45,9 @@ class LineChartViewController: UIViewController {
         
         // 데이터셋에 색상 지정
         lineChartdataSet.colors = [.red, .blue]
+        
+        // 동그라미 없애기
+        lineChartdataSet.drawCirclesEnabled = false
         
         // DataSet을 차트 데이터로 넣기
         let lineChartData = LineChartData(dataSet: lineChartdataSet)

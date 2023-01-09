@@ -54,6 +54,12 @@ class MultiLineChartViewController: UIViewController {
         for (index, entry) in lineChartDataEntries.enumerated() {
             let lineChartdataSet = LineChartDataSet(entries: entry, label: "매출")
             lineChartdataSet.colors = [colors[index]]
+            
+            // 동그라미 없애기
+            lineChartdataSet.drawCirclesEnabled = false
+            
+            
+            
             dataSets.append(lineChartdataSet)
         }
         
