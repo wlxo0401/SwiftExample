@@ -15,7 +15,7 @@ class MultiLineChartViewController: UIViewController {
     var dayData: [String] = ["11월02일", "11월03일", "11월04일", "11월05일", "11월06일", "11월07일", "11월08일", "11월09일", "11월10일"]
     
     var priceDataOne: [Double]! = [100, 345, 20, 120, 90, 300, 450, 220, 120]
-    var priceDataTwo: [Double]! = [50, 200, 200, 300, 150, 250, 200, 400, 200]
+    var priceDataTwo: [Double]! = [250, 200, 200, 300, 150, 250, 200, 400, 200]
     
     override func viewDidLoad() {
         super.viewDidLoad()
