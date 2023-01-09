@@ -17,6 +17,8 @@ class MultiLineChartViewController: UIViewController {
     var priceDataOne: [Double]! = [100, 345, 20, 120, 90, 300, 450, 220, 120]
     var priceDataTwo: [Double]! = [250, 200, 200, 300, 150, 250, 200, 400, 200]
     
+    var colors: [UIColor] = [.red, .blue]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -49,8 +51,9 @@ class MultiLineChartViewController: UIViewController {
         var dataSets: [LineChartDataSet] = []
         
         // 데이터 생성
-        for entry in lineChartDataEntries {
+        for (index, entry) in lineChartDataEntries.enumerated() {
             let lineChartdataSet = LineChartDataSet(entries: entry, label: "매출")
+            lineChartdataSet.colors = [colors[index]]
             dataSets.append(lineChartdataSet)
         }
         

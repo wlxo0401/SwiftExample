@@ -45,7 +45,7 @@ class LineChartViewController: UIViewController {
         let lineChartdataSet = LineChartDataSet(entries: lineChartDataEntries, label: "매출")
         
         // 데이터셋에 색상 지정
-        lineChartdataSet.colors = [.red]
+        lineChartdataSet.colors = [.red, .blue]
         
         // DataSet을 차트 데이터로 넣기
         let lineChartData = LineChartData(dataSet: lineChartdataSet)
