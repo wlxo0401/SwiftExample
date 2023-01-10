@@ -49,6 +49,7 @@ class LineChartViewController: UIViewController {
         // 동그라미 없애기
         lineChartdataSet.drawCirclesEnabled = false
         
+        
         // DataSet을 차트 데이터로 넣기
         let lineChartData = LineChartData(dataSet: lineChartdataSet)
         
