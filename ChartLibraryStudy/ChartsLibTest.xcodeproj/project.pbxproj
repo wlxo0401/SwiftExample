@@ -48,9 +48,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		398F96B2296DADD100C9D71B /* CornerRadiusBarChart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CornerRadiusBarChart;
+			sourceTree = "<group>";
+		};
 		39B702E3296C3EBC0075DAC4 /* BarChart */ = {
 			isa = PBXGroup;
 			children = (
+				398F96B2296DADD100C9D71B /* CornerRadiusBarChart */,
 				39D19F5529191E4D0000F4EB /* BarChartViewController.swift */,
 			);
 			path = BarChart;

@@ -44,10 +44,23 @@ class LineChartViewController: UIViewController {
         let lineChartdataSet = LineChartDataSet(entries: lineChartDataEntries, label: "매출")
         
         // 데이터셋에 색상 지정
-        lineChartdataSet.colors = [.red, .blue]
+        lineChartdataSet.colors = [.red]
         
         // 동그라미 없애기
         lineChartdataSet.drawCirclesEnabled = false
+        
+        // 밸류 출력
+        lineChartdataSet.drawValuesEnabled = false
+        
+        // 라인 Dash 길이
+//        lineChartdataSet.lineDashLengths = [10]
+        
+        lineChartdataSet.lineDashPhase = 5
+        
+        
+        
+        
+        
         
         
         // DataSet을 차트 데이터로 넣기

@@ -58,6 +58,8 @@ class MultiLineChartViewController: UIViewController {
             // 동그라미 없애기
             lineChartdataSet.drawCirclesEnabled = false
             
+            // 밸류 출력
+            lineChartdataSet.drawValuesEnabled = false
             
             
             dataSets.append(lineChartdataSet)
