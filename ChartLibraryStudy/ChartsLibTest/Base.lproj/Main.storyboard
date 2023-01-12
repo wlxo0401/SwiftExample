@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LDB-mz-DXq">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -168,6 +168,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ozk-rC-cgY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="722" y="672"/>
+        </scene>
+        <!--Custom Marker Line Chart View Controller-->
+        <scene sceneID="rag-HT-nhv">
+            <objects>
+                <viewController storyboardIdentifier="CustomMarkerLineChartViewController" id="LDB-mz-DXq" customClass="CustomMarkerLineChartViewController" customModule="ChartsLibTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SZb-BG-YO3">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wN7-6m-JHp" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="24" y="272" width="342" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="tKN-FE-96s"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CustomMarkerView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFN-rk-dbN">
+                                <rect key="frame" x="120" y="196" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tNE-RZ-tBm"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="wN7-6m-JHp" firstAttribute="centerY" secondItem="SZb-BG-YO3" secondAttribute="centerY" id="45B-CB-PSg"/>
+                            <constraint firstItem="TFN-rk-dbN" firstAttribute="centerX" secondItem="SZb-BG-YO3" secondAttribute="centerX" id="WnW-ct-2QV"/>
+                            <constraint firstItem="tNE-RZ-tBm" firstAttribute="trailing" secondItem="wN7-6m-JHp" secondAttribute="trailing" constant="24" id="gZZ-iA-zUh"/>
+                            <constraint firstItem="wN7-6m-JHp" firstAttribute="top" secondItem="TFN-rk-dbN" secondAttribute="bottom" constant="55" id="lBE-jV-lvt"/>
+                            <constraint firstItem="wN7-6m-JHp" firstAttribute="leading" secondItem="tNE-RZ-tBm" secondAttribute="leading" constant="24" id="qo0-ov-vF5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myLineChart" destination="wN7-6m-JHp" id="44v-6z-rKb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H0E-gU-5dq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="722" y="1332"/>
         </scene>
     </scenes>
     <resources>
