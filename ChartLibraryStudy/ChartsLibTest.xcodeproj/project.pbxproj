@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		394625EF291D18780074488F /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394625EE291D18780074488F /* LineChartViewController.swift */; };
 		394626052923B1120074488F /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394626042923B1120074488F /* PieChartViewController.swift */; };
+		39B702E7296C3EEF0075DAC4 /* MultiLineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B702E6296C3EEF0075DAC4 /* MultiLineChartViewController.swift */; };
+		39CA6DA2296EDBB50099D0D1 /* CustomMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA6DA1296EDBB50099D0D1 /* CustomMarkerView.swift */; };
+		39CA6DA6296EDC580099D0D1 /* CustomMarkerLineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA6DA5296EDC580099D0D1 /* CustomMarkerLineChartViewController.swift */; };
+		39CA6DAC296EE6760099D0D1 /* CustomMarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39CA6DAB296EE6760099D0D1 /* CustomMarkerView.xib */; };
 		39D19F5229191E4D0000F4EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D19F5129191E4D0000F4EB /* AppDelegate.swift */; };
 		39D19F5429191E4D0000F4EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D19F5329191E4D0000F4EB /* SceneDelegate.swift */; };
 		39D19F5629191E4D0000F4EB /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D19F5529191E4D0000F4EB /* BarChartViewController.swift */; };
@@ -21,6 +25,10 @@
 /* Begin PBXFileReference section */
 		394625EE291D18780074488F /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
 		394626042923B1120074488F /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
+		39B702E6296C3EEF0075DAC4 /* MultiLineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLineChartViewController.swift; sourceTree = "<group>"; };
+		39CA6DA1296EDBB50099D0D1 /* CustomMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMarkerView.swift; sourceTree = "<group>"; };
+		39CA6DA5296EDC580099D0D1 /* CustomMarkerLineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMarkerLineChartViewController.swift; sourceTree = "<group>"; };
+		39CA6DAB296EE6760099D0D1 /* CustomMarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomMarkerView.xib; sourceTree = "<group>"; };
 		39D19F4E29191E4D0000F4EB /* ChartsLibTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsLibTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D19F5129191E4D0000F4EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39D19F5329191E4D0000F4EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +54,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39B702E3296C3EBC0075DAC4 /* BarChart */ = {
+			isa = PBXGroup;
+			children = (
+				39D19F5529191E4D0000F4EB /* BarChartViewController.swift */,
+			);
+			path = BarChart;
+			sourceTree = "<group>";
+		};
+		39B702E4296C3EC50075DAC4 /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				39CA6DA4296EDC200099D0D1 /* MultiLineChart */,
+				39CA6DA3296EDC140099D0D1 /* SingleLineChart */,
+				39CA6DA0296EDB990099D0D1 /* CustomMarker */,
+			);
+			path = LineChart;
+			sourceTree = "<group>";
+		};
+		39B702E5296C3ECE0075DAC4 /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				394626042923B1120074488F /* PieChartViewController.swift */,
+			);
+			path = PieChart;
+			sourceTree = "<group>";
+		};
+		39CA6DA0296EDB990099D0D1 /* CustomMarker */ = {
+			isa = PBXGroup;
+			children = (
+				39CA6DA1296EDBB50099D0D1 /* CustomMarkerView.swift */,
+				39CA6DAB296EE6760099D0D1 /* CustomMarkerView.xib */,
+				39CA6DA5296EDC580099D0D1 /* CustomMarkerLineChartViewController.swift */,
+			);
+			path = CustomMarker;
+			sourceTree = "<group>";
+		};
+		39CA6DA3296EDC140099D0D1 /* SingleLineChart */ = {
+			isa = PBXGroup;
+			children = (
+				394625EE291D18780074488F /* LineChartViewController.swift */,
+			);
+			path = SingleLineChart;
+			sourceTree = "<group>";
+		};
+		39CA6DA4296EDC200099D0D1 /* MultiLineChart */ = {
+			isa = PBXGroup;
+			children = (
+				39B702E6296C3EEF0075DAC4 /* MultiLineChartViewController.swift */,
+			);
+			path = MultiLineChart;
+			sourceTree = "<group>";
+		};
 		39D19F4529191E4D0000F4EB = {
 			isa = PBXGroup;
 			children = (
@@ -69,9 +129,9 @@
 			children = (
 				39D19F5129191E4D0000F4EB /* AppDelegate.swift */,
 				39D19F5329191E4D0000F4EB /* SceneDelegate.swift */,
-				39D19F5529191E4D0000F4EB /* BarChartViewController.swift */,
-				394625EE291D18780074488F /* LineChartViewController.swift */,
-				394626042923B1120074488F /* PieChartViewController.swift */,
+				39B702E3296C3EBC0075DAC4 /* BarChart */,
+				39B702E4296C3EC50075DAC4 /* LineChart */,
+				39B702E5296C3ECE0075DAC4 /* PieChart */,
 				39D19F5729191E4D0000F4EB /* Main.storyboard */,
 				39D19F5A29191E4D0000F4EB /* Assets.xcassets */,
 				39D19F5C29191E4D0000F4EB /* LaunchScreen.storyboard */,
@@ -158,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39D19F5E29191E4D0000F4EB /* LaunchScreen.storyboard in Resources */,
+				39CA6DAC296EE6760099D0D1 /* CustomMarkerView.xib in Resources */,
 				39D19F5B29191E4D0000F4EB /* Assets.xcassets in Resources */,
 				39D19F5929191E4D0000F4EB /* Main.storyboard in Resources */,
 			);
@@ -214,9 +275,12 @@
 			files = (
 				39D19F5629191E4D0000F4EB /* BarChartViewController.swift in Sources */,
 				394626052923B1120074488F /* PieChartViewController.swift in Sources */,
+				39CA6DA6296EDC580099D0D1 /* CustomMarkerLineChartViewController.swift in Sources */,
 				394625EF291D18780074488F /* LineChartViewController.swift in Sources */,
+				39CA6DA2296EDBB50099D0D1 /* CustomMarkerView.swift in Sources */,
 				39D19F5229191E4D0000F4EB /* AppDelegate.swift in Sources */,
 				39D19F5429191E4D0000F4EB /* SceneDelegate.swift in Sources */,
+				39B702E7296C3EEF0075DAC4 /* MultiLineChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

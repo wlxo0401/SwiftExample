@@ -12,10 +12,8 @@ class BarChartViewController: UIViewController {
 
     @IBOutlet weak var myBarChartView: BarChartView!
     
-    
     var dayData: [String] = ["11월02일", "11월03일", "11월04일", "11월05일", "11월06일", "11월07일", "11월08일", "11월09일", "11월10일"]
     var priceData: [Double]! = [100, 345, 20, 120, 90, 300, 450, 220, 120]
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,10 +42,10 @@ class BarChartViewController: UIViewController {
         // x축 선
         self.myBarChartView.xAxis.drawAxisLineEnabled = true
         
+        print("self.myBarChartView.isDrawBarShadowEnabled : ", self.myBarChartView.isDrawBarShadowEnabled)
         
         // 데이터 범례 삭제
         self.myBarChartView.legend.enabled = false
-        
         
         self.myBarChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: dayData)
         self.myBarChartView.xAxis.setLabelCount(priceData.count, force: false)
@@ -58,6 +56,16 @@ class BarChartViewController: UIViewController {
     func setBarData(barChartView: BarChartView, barChartDataEntries: [BarChartDataEntry]) {
         let barChartdataSet = BarChartDataSet(entries: barChartDataEntries, label: "매출")
 
+        // 밸류 속성
+        barChartdataSet.drawValuesEnabled = false
+        
+        // 선 두께
+//        barChartdataSet.barBorderWidth = 5
+        
+        // 선 색
+//        barChartdataSet.barBorderColor = .red
+        
+//        barChartdataSet.isDrawBarShadowEnabled = true
         
         let barChartData = BarChartData(dataSet: barChartdataSet)
         barChartView.data = barChartData

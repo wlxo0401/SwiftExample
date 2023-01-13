@@ -43,6 +43,9 @@ class PieChartViewController: UIViewController {
     func setPieData(pieChartView: PieChartView, pieChartDataEntries: [ChartDataEntry]) {
         // Entry들을 이용해 Data Set 만들기
         let pieChartdataSet = PieChartDataSet(entries: pieChartDataEntries, label: "매출")
+        
+        pieChartdataSet.drawValuesEnabled = false
+        
         // DataSet을 차트 데이터로 넣기
         let pieChartData = PieChartData(dataSet: pieChartdataSet)
         // 데이터 출력
