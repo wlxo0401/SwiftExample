@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import PhotosUI
+
 
 class SecondViewController: UIViewController {
 
@@ -17,6 +19,9 @@ class SecondViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        self.CameraPermission()
+        
+        
         self.scanView.delegate = self
         
         
@@ -27,6 +32,17 @@ class SecondViewController: UIViewController {
         }
         
         
+    }
+    
+    private func CameraPermission() {
+       AVCaptureDevice.requestAccess(for: .video, completionHandler: { (granted: Bool) in
+           if granted {
+               print("Camera: 권한 허용")
+           } else {
+               print("Camera: 권한 거부")
+//               self.showAlertGoToSetting()
+           }
+       })
     }
 }
 extension SecondViewController: CodeReaderViewDelegate {

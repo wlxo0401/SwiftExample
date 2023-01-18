@@ -15,20 +15,29 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        self.CameraPermission()
     }
 
     @IBAction func runCameraButtonAction(_ sender: Any) {
-        print("카메라 실행")
-        self.userCamera()
+        PhotoCameraLibraryPermissionUtils().cameraPermission(completion: { result in
+            if result {
+                self.userCamera()
+            } else {
+                self.showAlertGoToSetting()
+            }
+        })
+        
     }
     
     @IBAction func runAlbumButtonAction(_ sender: Any) {
-        print("앨범 실행")
-        self.useAlbum()
+        PhotoCameraLibraryPermissionUtils().albumPermission(completion: { result in
+            if result {
+                self.useAlbum()
+            } else {
+                self.showAlertGoToSetting()
+            }
+        })
     }
+    
     
     @IBAction func runReaderViewButtonAction(_ sender: Any) {
         print("스캔 화면")
@@ -38,17 +47,6 @@ class FirstViewController: UIViewController {
 }
 
 extension FirstViewController {
-    private func CameraPermission() {
-       AVCaptureDevice.requestAccess(for: .video, completionHandler: { (granted: Bool) in
-           if granted {
-               print("Camera: 권한 허용")
-           } else {
-               print("Camera: 권한 거부")
-               self.showAlertGoToSetting()
-           }
-       })
-    }
-    
     func showAlertGoToSetting() {
         let alertController = UIAlertController(
             title: "현재 카메라 사용에 대한 접근 권한이 없습니다.",
@@ -79,23 +77,27 @@ extension FirstViewController {
     //MARK: 프로필 카메라/사진첩 동작
     // 프로필 사진 카메라 선택
     func userCamera() {
-        let vc = UIImagePickerController()
-        vc.sourceType = .camera
-        vc.allowsEditing = false
-        vc.cameraFlashMode = .off
-        vc.delegate = self
-        self.present(vc, animated: true)
+        DispatchQueue.main.async {
+            let vc = UIImagePickerController()
+            vc.sourceType = .camera
+            vc.allowsEditing = false
+            vc.cameraFlashMode = .off
+            vc.delegate = self
+            self.present(vc, animated: true)
+        }
     }
     
     // 프로필 사진 사진첩 선택
     func useAlbum() {
-        var config = PHPickerConfiguration()
-        config.selectionLimit = 1
-        config.filter = .any(of: [.images])
-        
-        let phpPicker = PHPickerViewController(configuration: config)
-        phpPicker.delegate = self
-        self.present(phpPicker, animated: true, completion: nil)
+        DispatchQueue.main.async {
+            var config = PHPickerConfiguration()
+            config.selectionLimit = 1
+            config.filter = .any(of: [.images])
+            
+            let phpPicker = PHPickerViewController(configuration: config)
+            phpPicker.delegate = self
+            self.present(phpPicker, animated: true, completion: nil)
+        }
     }
 }
 
@@ -126,10 +128,45 @@ extension FirstViewController: UIImagePickerControllerDelegate, UINavigationCont
             itemProvider.loadObject(ofClass: UIImage.self) { (image, error) in // load 파일
                 guard let selectedImage = image as? UIImage else { return }
                 
-                self.testImageView.image = selectedImage
-                
+                DispatchQueue.main.async {
+                    self.testImageView.image = selectedImage
+                }
             }
         }
         return
+    }
+}
+
+
+struct PhotoCameraLibraryPermissionUtils {
+    internal func cameraPermission(completion: @escaping (Bool) -> Void) {
+       AVCaptureDevice.requestAccess(for: .video, completionHandler: { (granted: Bool) in
+           if granted {
+               print("Camera: 권한 허용")
+               return completion(true)
+           } else {
+               print("Camera: 권한 거부")
+               return completion(false)
+           }
+       })
+    }
+    
+    
+    internal func albumPermission(completion: @escaping (Bool) -> Void) {
+        if #available(iOS 14, *) {
+            PHPhotoLibrary.requestAuthorization(for: .readWrite) { authorizationStatus in
+                switch authorizationStatus {
+                case .limited:
+                    print("limited authorization granted")
+                    return completion(true)
+                case .authorized:
+                    print("authorization granted")
+                    return completion(true)
+                default:
+                    print("Unimplemented")
+                    return completion(false)
+                }
+            }
+        }
     }
 }
