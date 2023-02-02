@@ -94,4 +94,6 @@ MyAssetRecord/Pods/*
 .DS_Store
 **/.DS_Store
 
+
+# Ignore googleService
 **/GoogleService-Info.plist
