@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  ScreenCaptureBlock
+//  FirebaseAnalyticsStudy
 //
-//  Created by 김지태 on 2023/01/12.
+//  Created by 김지태 on 2023/02/01.
 //
 
 import UIKit

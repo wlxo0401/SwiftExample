@@ -1,11 +1,13 @@
 //
 //  AppDelegate.swift
-//  ScreenCaptureBlock
+//  FirebaseAnalyticsStudy
 //
-//  Created by 김지태 on 2023/01/12.
+//  Created by 김지태 on 2023/02/01.
 //
 
 import UIKit
+import Firebase
+//import FirebaseAnalytics
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+        Analytics.setAnalyticsCollectionEnabled(true)
+        
         return true
     }
 
