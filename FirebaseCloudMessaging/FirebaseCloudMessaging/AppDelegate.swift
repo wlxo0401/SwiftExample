@@ -15,10 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        
+        //
         FirebaseApp.configure()
+        // 앱 메세지를 받는 Delegate
+        UNUserNotificationCenter.current().delegate = self
+        // Firebase delegate
+        Messaging.messaging().delegate = self
+        // APNS 등록
+        application.registerForRemoteNotifications()
         
-        
+        // 권한 동의 받는 중
         if #available(iOS 12.0, *) {
             UNUserNotificationCenter.current().requestAuthorization(
                 options: [.alert, .sound, .badge, .providesAppNotificationSettings], completionHandler: { didAllow,Error in
@@ -28,12 +34,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print(didAllow)
             })
         }
-        UNUserNotificationCenter.current().delegate = self
-        
-        Messaging.messaging().delegate = self
-        
-        application.registerForRemoteNotifications()
-        
         return true
     }
     
