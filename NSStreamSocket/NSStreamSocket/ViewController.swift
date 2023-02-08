@@ -7,161 +7,87 @@
 
 import UIKit
 
+// http://www.digipine.com/index.php?mid=macios&document_srl=771
 class ViewController: UIViewController, StreamDelegate {
+    
+    @IBOutlet weak var messageTableView: UITableView!
     
     let host: String = "192.168.50.173"
     let port: Int = 8282
     
-    var inputStream: InputStream?
-    var outputStream: OutputStream?
+    let socket = SocketStudy.shared
     
+    var uuid: String = "''"
+    
+    var messageFromServer: [String] = []
 
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var textField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.uuid = self.getDeviceUUID()
         // Do any additional setup after loading the view.
-        self.connect()
         
-        let query = "HELLO SWIFT SOCKET!"
-
+        self.socket.connect(host: host, port: port)
+        // 
+        self.fromServerData()
+        
+        self.messageTableView.dataSource = self
+    }
+    
+    @IBAction func sendButtonAction(_ sender: Any) {
+        guard let name = self.nameTextField.text else { return }
+        
+        if name == "" { return }
+        
+        guard let message = self.textField.text else { return }
+        if message == "" { return }
+        
+        let query: String = "\(self.uuid)|+|\(name)|+|\(message)"
         let dataQuery = query.data(using: String.Encoding.utf8, allowLossyConversion: true)
-
-        let sentCount = self.send(data: dataQuery!)
-
-        //let sentCount = socket.send(data: query)
-
+        let sentCount = self.socket.send(data: dataQuery!)
         print("sentCount : \(sentCount)")
-
-        
-
-        let buffersize = 1024
-
-        let chunk = self.recv(buffersize: buffersize)
-
-        
-
-        var getString : String?
-
-        
-
-        if(chunk.count > 0){
-
-            getString = String(bytes: chunk, encoding: String.Encoding.utf8)!
-
-            print("received : \(getString!)")
-
-        }
-    }
-
-    func connect() {
-        Stream.getStreamsToHost(withName:host, port : port, inputStream: &inputStream, outputStream: &outputStream)
-
-        if inputStream != nil && outputStream != nil {
-            // Set delegate
-            inputStream!.delegate = self
-            outputStream!.delegate = self
-
-            // Schedule
-            inputStream!.schedule(in: .main, forMode: .default)
-            outputStream!.schedule(in: .main, forMode: .default)
-
-            print("Start open()")
-
-            // Open!
-            inputStream!.open()
-            outputStream!.open()
-        }
     }
     
-    func send(data: Data) -> Int {
-        let bytesWritten = data.withUnsafeBytes { outputStream?.write($0, maxLength: data.count) }
-        return bytesWritten!
+    // 기기 ID
+    func getDeviceUUID() -> String {
+        return UIDevice.current.identifierForVendor!.uuidString
     }
-
-    func recv(buffersize: Int) -> Data {
-
-        var buffer = [UInt8](repeating :0, count : buffersize)
-        let bytesRead = inputStream?.read(&buffer, maxLength: buffersize)
-        var dropCount = buffersize - bytesRead!
-        if dropCount < 0 {
-            dropCount = 0
-        }
-
-        let chunk = buffer.dropLast(dropCount)
-        return Data(chunk)
-    }
-
-
-
-    func disconnect() {
-        inputStream?.close()
-        outputStream?.close()
-    }
-       
     
-    func stream(_ stream: Stream, handle eventCode: Stream.Event) {
-
+    private func fromServerData() {
         
+        DispatchQueue.global().async {
+            while true {
+                let buffersize = 1024
+                let chunk = self.socket.recv(buffersize: buffersize)
 
-        print("event:\(eventCode)")
+                var getString : String?
 
+                if(chunk.count > 0){
+                    getString = String(bytes: chunk, encoding: String.Encoding.utf8)!
+                    print("received : \(getString!)")
+                }
+            }
+        }
         
-
-        if stream === inputStream {
-
-            switch eventCode {
-
-            case Stream.Event.errorOccurred:
-
-                print("inputStream:ErrorOccurred")
-
-            case Stream.Event.openCompleted:
-
-                print("inputStream:OpenCompleted")
-
-            case Stream.Event.hasBytesAvailable:
-
-                print("inputStream:HasBytesAvailable")
-
-                
-
-                
-
-            default:
-
-                break
-
-            }
-
-        }
-
-        else if stream === outputStream {
-
-            switch eventCode {
-
-            case Stream.Event.errorOccurred:
-
-                print("outputStream:ErrorOccurred")
-
-            case Stream.Event.openCompleted:
-
-                print("outputStream:OpenCompleted")
-
-            case Stream.Event.hasSpaceAvailable:
-
-                print("outputStream:HasSpaceAvailable")
-
-                
-
-                
-
-            default:
-
-                break
-
-            }
-
-        }
-
+        
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+        self.view.endEditing(true)
     }
 }
 
+
+extension ViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.messageFromServer.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+}
