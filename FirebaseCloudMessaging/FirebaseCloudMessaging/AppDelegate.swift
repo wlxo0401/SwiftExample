@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        //
+        // Firebase config
         FirebaseApp.configure()
         // 앱 메세지를 받는 Delegate
         UNUserNotificationCenter.current().delegate = self
@@ -34,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print(didAllow)
             })
         }
+        
         return true
     }
     
