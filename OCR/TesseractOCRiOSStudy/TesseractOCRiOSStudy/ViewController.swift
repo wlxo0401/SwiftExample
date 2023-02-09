@@ -29,6 +29,7 @@ class ViewController: UIViewController {
             // 6
             let endTime = CFAbsoluteTimeGetCurrent() - startTime
             print(endTime)
+            
             print(tesseract.recognizedText)
         }
 
