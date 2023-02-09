@@ -7,62 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3912D9BE2993695E0033DC72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3912D9BD2993695E0033DC72 /* AppDelegate.swift */; };
-		3912D9C02993695E0033DC72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3912D9BF2993695E0033DC72 /* SceneDelegate.swift */; };
-		3912D9C22993695E0033DC72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3912D9C12993695E0033DC72 /* ViewController.swift */; };
-		3912D9C52993695E0033DC72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3912D9C32993695E0033DC72 /* Main.storyboard */; };
-		3912D9C72993695F0033DC72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3912D9C62993695F0033DC72 /* Assets.xcassets */; };
-		3912D9CA2993695F0033DC72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3912D9C82993695F0033DC72 /* LaunchScreen.storyboard */; };
+		39659BF129949C1600D75623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39659BF029949C1600D75623 /* AppDelegate.swift */; };
+		39659BF329949C1600D75623 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39659BF229949C1600D75623 /* SceneDelegate.swift */; };
+		39659BF529949C1600D75623 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39659BF429949C1600D75623 /* ViewController.swift */; };
+		39659BF829949C1600D75623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39659BF629949C1600D75623 /* Main.storyboard */; };
+		39659BFA29949C1700D75623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39659BF929949C1700D75623 /* Assets.xcassets */; };
+		39659BFD29949C1700D75623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39659BFB29949C1700D75623 /* LaunchScreen.storyboard */; };
+		39659C0629949F9A00D75623 /* SwiftyTesseract in Frameworks */ = {isa = PBXBuildFile; productRef = 39659C0529949F9A00D75623 /* SwiftyTesseract */; };
+		39A902E02994E47A0002089F /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 39A902DF2994E47A0002089F /* tessdata */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3912D9BA2993695E0033DC72 /* SwiftyTesseractStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyTesseractStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3912D9BD2993695E0033DC72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3912D9BF2993695E0033DC72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3912D9C12993695E0033DC72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3912D9C42993695E0033DC72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3912D9C62993695F0033DC72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3912D9C92993695F0033DC72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3912D9CB2993695F0033DC72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39659BED29949C1600D75623 /* SwiftyTesseractStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyTesseractStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39659BF029949C1600D75623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39659BF229949C1600D75623 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		39659BF429949C1600D75623 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		39659BF729949C1600D75623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39659BF929949C1700D75623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39659BFC29949C1700D75623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39659BFE29949C1700D75623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39A902DF2994E47A0002089F /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3912D9B72993695E0033DC72 /* Frameworks */ = {
+		39659BEA29949C1600D75623 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39659C0629949F9A00D75623 /* SwiftyTesseract in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3912D9B12993695E0033DC72 = {
+		39659BE429949C1600D75623 = {
 			isa = PBXGroup;
 			children = (
-				3912D9BC2993695E0033DC72 /* SwiftyTesseractStudy */,
-				3912D9BB2993695E0033DC72 /* Products */,
+				39659BEF29949C1600D75623 /* SwiftyTesseractStudy */,
+				39659BEE29949C1600D75623 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3912D9BB2993695E0033DC72 /* Products */ = {
+		39659BEE29949C1600D75623 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3912D9BA2993695E0033DC72 /* SwiftyTesseractStudy.app */,
+				39659BED29949C1600D75623 /* SwiftyTesseractStudy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3912D9BC2993695E0033DC72 /* SwiftyTesseractStudy */ = {
+		39659BEF29949C1600D75623 /* SwiftyTesseractStudy */ = {
 			isa = PBXGroup;
 			children = (
-				3912D9BD2993695E0033DC72 /* AppDelegate.swift */,
-				3912D9BF2993695E0033DC72 /* SceneDelegate.swift */,
-				3912D9C12993695E0033DC72 /* ViewController.swift */,
-				3912D9C32993695E0033DC72 /* Main.storyboard */,
-				3912D9C62993695F0033DC72 /* Assets.xcassets */,
-				3912D9C82993695F0033DC72 /* LaunchScreen.storyboard */,
-				3912D9CB2993695F0033DC72 /* Info.plist */,
+				39A902DF2994E47A0002089F /* tessdata */,
+				39659BF029949C1600D75623 /* AppDelegate.swift */,
+				39659BF229949C1600D75623 /* SceneDelegate.swift */,
+				39659BF429949C1600D75623 /* ViewController.swift */,
+				39659BF629949C1600D75623 /* Main.storyboard */,
+				39659BF929949C1700D75623 /* Assets.xcassets */,
+				39659BFB29949C1700D75623 /* LaunchScreen.storyboard */,
+				39659BFE29949C1700D75623 /* Info.plist */,
 			);
 			path = SwiftyTesseractStudy;
 			sourceTree = "<group>";
@@ -70,13 +75,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3912D9B92993695E0033DC72 /* SwiftyTesseractStudy */ = {
+		39659BEC29949C1600D75623 /* SwiftyTesseractStudy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3912D9CE2993695F0033DC72 /* Build configuration list for PBXNativeTarget "SwiftyTesseractStudy" */;
+			buildConfigurationList = 39659C0129949C1700D75623 /* Build configuration list for PBXNativeTarget "SwiftyTesseractStudy" */;
 			buildPhases = (
-				3912D9B62993695E0033DC72 /* Sources */,
-				3912D9B72993695E0033DC72 /* Frameworks */,
-				3912D9B82993695E0033DC72 /* Resources */,
+				39659BE929949C1600D75623 /* Sources */,
+				39659BEA29949C1600D75623 /* Frameworks */,
+				39659BEB29949C1600D75623 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,27 +89,28 @@
 			);
 			name = SwiftyTesseractStudy;
 			packageProductDependencies = (
+				39659C0529949F9A00D75623 /* SwiftyTesseract */,
 			);
 			productName = SwiftyTesseractStudy;
-			productReference = 3912D9BA2993695E0033DC72 /* SwiftyTesseractStudy.app */;
+			productReference = 39659BED29949C1600D75623 /* SwiftyTesseractStudy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3912D9B22993695E0033DC72 /* Project object */ = {
+		39659BE529949C1600D75623 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					3912D9B92993695E0033DC72 = {
+					39659BEC29949C1600D75623 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = 3912D9B52993695E0033DC72 /* Build configuration list for PBXProject "SwiftyTesseractStudy" */;
+			buildConfigurationList = 39659BE829949C1600D75623 /* Build configuration list for PBXProject "SwiftyTesseractStudy" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,57 +118,59 @@
 				en,
 				Base,
 			);
-			mainGroup = 3912D9B12993695E0033DC72;
+			mainGroup = 39659BE429949C1600D75623;
 			packageReferences = (
+				39659C0429949F9A00D75623 /* XCRemoteSwiftPackageReference "SwiftyTesseract" */,
 			);
-			productRefGroup = 3912D9BB2993695E0033DC72 /* Products */;
+			productRefGroup = 39659BEE29949C1600D75623 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3912D9B92993695E0033DC72 /* SwiftyTesseractStudy */,
+				39659BEC29949C1600D75623 /* SwiftyTesseractStudy */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3912D9B82993695E0033DC72 /* Resources */ = {
+		39659BEB29949C1600D75623 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3912D9CA2993695F0033DC72 /* LaunchScreen.storyboard in Resources */,
-				3912D9C72993695F0033DC72 /* Assets.xcassets in Resources */,
-				3912D9C52993695E0033DC72 /* Main.storyboard in Resources */,
+				39659BFD29949C1700D75623 /* LaunchScreen.storyboard in Resources */,
+				39A902E02994E47A0002089F /* tessdata in Resources */,
+				39659BFA29949C1700D75623 /* Assets.xcassets in Resources */,
+				39659BF829949C1600D75623 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3912D9B62993695E0033DC72 /* Sources */ = {
+		39659BE929949C1600D75623 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3912D9C22993695E0033DC72 /* ViewController.swift in Sources */,
-				3912D9BE2993695E0033DC72 /* AppDelegate.swift in Sources */,
-				3912D9C02993695E0033DC72 /* SceneDelegate.swift in Sources */,
+				39659BF529949C1600D75623 /* ViewController.swift in Sources */,
+				39659BF129949C1600D75623 /* AppDelegate.swift in Sources */,
+				39659BF329949C1600D75623 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3912D9C32993695E0033DC72 /* Main.storyboard */ = {
+		39659BF629949C1600D75623 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3912D9C42993695E0033DC72 /* Base */,
+				39659BF729949C1600D75623 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		3912D9C82993695F0033DC72 /* LaunchScreen.storyboard */ = {
+		39659BFB29949C1700D75623 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3912D9C92993695F0033DC72 /* Base */,
+				39659BFC29949C1700D75623 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +178,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3912D9CC2993695F0033DC72 /* Debug */ = {
+		39659BFF29949C1700D75623 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +238,7 @@
 			};
 			name = Debug;
 		};
-		3912D9CD2993695F0033DC72 /* Release */ = {
+		39659C0029949C1700D75623 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -284,7 +292,7 @@
 			};
 			name = Release;
 		};
-		3912D9CF2993695F0033DC72 /* Debug */ = {
+		39659C0229949C1700D75623 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -294,7 +302,6 @@
 				DEVELOPMENT_TEAM = 59NQ3YR32K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftyTesseractStudy/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.adventure-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -314,7 +321,7 @@
 			};
 			name = Debug;
 		};
-		3912D9D02993695F0033DC72 /* Release */ = {
+		39659C0329949C1700D75623 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -324,7 +331,6 @@
 				DEVELOPMENT_TEAM = 59NQ3YR32K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftyTesseractStudy/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.adventure-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -347,25 +353,44 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3912D9B52993695E0033DC72 /* Build configuration list for PBXProject "SwiftyTesseractStudy" */ = {
+		39659BE829949C1600D75623 /* Build configuration list for PBXProject "SwiftyTesseractStudy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3912D9CC2993695F0033DC72 /* Debug */,
-				3912D9CD2993695F0033DC72 /* Release */,
+				39659BFF29949C1700D75623 /* Debug */,
+				39659C0029949C1700D75623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3912D9CE2993695F0033DC72 /* Build configuration list for PBXNativeTarget "SwiftyTesseractStudy" */ = {
+		39659C0129949C1700D75623 /* Build configuration list for PBXNativeTarget "SwiftyTesseractStudy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3912D9CF2993695F0033DC72 /* Debug */,
-				3912D9D02993695F0033DC72 /* Release */,
+				39659C0229949C1700D75623 /* Debug */,
+				39659C0329949C1700D75623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		39659C0429949F9A00D75623 /* XCRemoteSwiftPackageReference "SwiftyTesseract" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyTesseract/SwiftyTesseract.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		39659C0529949F9A00D75623 /* SwiftyTesseract */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39659C0429949F9A00D75623 /* XCRemoteSwiftPackageReference "SwiftyTesseract" */;
+			productName = SwiftyTesseract;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 3912D9B22993695E0033DC72 /* Project object */;
+	rootObject = 39659BE529949C1600D75623 /* Project object */;
 }

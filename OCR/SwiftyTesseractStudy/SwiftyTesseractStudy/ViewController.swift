@@ -2,25 +2,36 @@
 //  ViewController.swift
 //  SwiftyTesseractStudy
 //
-//  Created by 김지태 on 2023/02/08.
+//  Created by 김지태 on 2023/02/09.
 //
 
 import UIKit
 import SwiftyTesseract
 
+
 class ViewController: UIViewController {
+    
+    
+    
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let tesseract = Tesseract(languages: [.english, .korean])
+        let startTime = CFAbsoluteTimeGetCurrent()
+        let tesseract = Tesseract(languages: [.korean, .english], engineMode: .lstmOnly)
+        let image = UIImage(named: "NameCardTop")!
+        let result = tesseract.performOCR(on: image)
+        let endTime = CFAbsoluteTimeGetCurrent() - startTime
+        let publisher = tesseract.performOCRPublisher(on: image)
         
-//        let imageData = try Data(contentsOf: urlOfYourImage)
         
-        let imageData = UIImage(named: "someImageWithText.jpg")!
-        let result: Result<String, Tesseract.Error> = tesseract.performOCR(on: imageData)
-        print(result)
+        print(endTime)
+        
+        print("Hi :", result)
+        print("publisher : ", publisher.description)
     }
 
 

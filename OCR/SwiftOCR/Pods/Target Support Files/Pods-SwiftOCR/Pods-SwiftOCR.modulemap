@@ -1,0 +1,6 @@
+framework module Pods_SwiftOCR {
+  umbrella header "Pods-SwiftOCR-umbrella.h"
+
+  export *
+  module * { export * }
+}

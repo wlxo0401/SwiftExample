@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  SwiftyTesseractStudy
 //
-//  Created by 김지태 on 2023/02/08.
+//  Created by 김지태 on 2023/02/09.
 //
 
 import UIKit
