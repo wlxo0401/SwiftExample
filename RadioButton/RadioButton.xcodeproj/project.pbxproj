@@ -13,6 +13,7 @@
 		39280A20296A519B0008EF2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39280A1E296A519B0008EF2C /* Main.storyboard */; };
 		39280A22296A519B0008EF2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39280A21296A519B0008EF2C /* Assets.xcassets */; };
 		39280A25296A519B0008EF2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39280A23296A519B0008EF2C /* LaunchScreen.storyboard */; };
+		39A36A32298E8CFF00448138 /* GCDWebServer in Frameworks */ = {isa = PBXBuildFile; productRef = 39A36A31298E8CFF00448138 /* GCDWebServer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A36A32298E8CFF00448138 /* GCDWebServer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = RadioButton;
+			packageProductDependencies = (
+				39A36A31298E8CFF00448138 /* GCDWebServer */,
+			);
 			productName = RadioButton;
 			productReference = 39280A15296A519B0008EF2C /* RadioButton.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 39280A0C296A519B0008EF2C;
+			packageReferences = (
+				39A36A30298E8CFF00448138 /* XCRemoteSwiftPackageReference "GCDWebServer" */,
+			);
 			productRefGroup = 39280A16296A519B0008EF2C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		39A36A30298E8CFF00448138 /* XCRemoteSwiftPackageReference "GCDWebServer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yene/GCDWebServer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		39A36A31298E8CFF00448138 /* GCDWebServer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39A36A30298E8CFF00448138 /* XCRemoteSwiftPackageReference "GCDWebServer" */;
+			productName = GCDWebServer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 39280A0D296A519B0008EF2C /* Project object */;
 }
