@@ -14,7 +14,7 @@
 		39659BFA29949C1700D75623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39659BF929949C1700D75623 /* Assets.xcassets */; };
 		39659BFD29949C1700D75623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39659BFB29949C1700D75623 /* LaunchScreen.storyboard */; };
 		39659C0629949F9A00D75623 /* SwiftyTesseract in Frameworks */ = {isa = PBXBuildFile; productRef = 39659C0529949F9A00D75623 /* SwiftyTesseract */; };
-		39EA432E2995310200321C41 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 39EA432D2995310200321C41 /* tessdata */; };
+		398F7DD1299730F6008738C3 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 398F7DD0299730F6008738C3 /* tessdata */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,7 @@
 		39659BF929949C1700D75623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39659BFC29949C1700D75623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39659BFE29949C1700D75623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		39EA432D2995310200321C41 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		398F7DD0299730F6008738C3 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 		39659BEF29949C1600D75623 /* SwiftyTesseractStudy */ = {
 			isa = PBXGroup;
 			children = (
-				39EA432D2995310200321C41 /* tessdata */,
+				398F7DD0299730F6008738C3 /* tessdata */,
 				39659BF029949C1600D75623 /* AppDelegate.swift */,
 				39659BF229949C1600D75623 /* SceneDelegate.swift */,
 				39659BF429949C1600D75623 /* ViewController.swift */,
@@ -137,7 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39659BFD29949C1700D75623 /* LaunchScreen.storyboard in Resources */,
-				39EA432E2995310200321C41 /* tessdata in Resources */,
+				398F7DD1299730F6008738C3 /* tessdata in Resources */,
 				39659BFA29949C1700D75623 /* Assets.xcassets in Resources */,
 				39659BF829949C1600D75623 /* Main.storyboard in Resources */,
 			);

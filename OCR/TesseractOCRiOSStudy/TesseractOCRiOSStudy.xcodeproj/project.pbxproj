@@ -13,7 +13,7 @@
 		39659C4D2994B9B500D75623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39659C4B2994B9B500D75623 /* Main.storyboard */; };
 		39659C4F2994B9B600D75623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39659C4E2994B9B600D75623 /* Assets.xcassets */; };
 		39659C522994B9B600D75623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39659C502994B9B600D75623 /* LaunchScreen.storyboard */; };
-		39D22EF12994C4FC001B6D31 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 39D22EF02994C4FC001B6D31 /* tessdata */; };
+		3972E6462997396000EE5CA5 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 3972E6452997396000EE5CA5 /* tessdata */; };
 		BA1A00879D87CDFD80650B7A /* Pods_TesseractOCRiOSStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1177BD07F9C430DE2711E26 /* Pods_TesseractOCRiOSStudy.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +27,7 @@
 		39659C4E2994B9B600D75623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39659C512994B9B600D75623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39659C532994B9B600D75623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		39D22EF02994C4FC001B6D31 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		3972E6452997396000EE5CA5 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		E1177BD07F9C430DE2711E26 /* Pods_TesseractOCRiOSStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TesseractOCRiOSStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF56FF9955646DE14E0FB4F8 /* Pods-TesseractOCRiOSStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesseractOCRiOSStudy.release.xcconfig"; path = "Target Support Files/Pods-TesseractOCRiOSStudy/Pods-TesseractOCRiOSStudy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,7 +65,7 @@
 		39659C442994B9B500D75623 /* TesseractOCRiOSStudy */ = {
 			isa = PBXGroup;
 			children = (
-				39D22EF02994C4FC001B6D31 /* tessdata */,
+				3972E6452997396000EE5CA5 /* tessdata */,
 				39659C452994B9B500D75623 /* AppDelegate.swift */,
 				39659C472994B9B500D75623 /* SceneDelegate.swift */,
 				39659C492994B9B500D75623 /* ViewController.swift */,
@@ -155,7 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39659C522994B9B600D75623 /* LaunchScreen.storyboard in Resources */,
-				39D22EF12994C4FC001B6D31 /* tessdata in Resources */,
+				3972E6462997396000EE5CA5 /* tessdata in Resources */,
 				39659C4F2994B9B600D75623 /* Assets.xcassets in Resources */,
 				39659C4D2994B9B500D75623 /* Main.storyboard in Resources */,
 			);

@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         let startTime = CFAbsoluteTimeGetCurrent()
         // 동작 수행 코드
         
-        let tesseract = Tesseract(languages: [.korean, .english], engineMode: .default)
+        let tesseract = Tesseract(languages: [.korean, .english], engineMode: .lstmOnly)
         let image = UIImage(named: "NameCardTop")!
         let result = tesseract.performOCR(on: image)
         let processTime = CFAbsoluteTimeGetCurrent() - startTime
@@ -60,9 +60,14 @@ class ViewController: UIViewController {
 //         시간 : 약 1.9초
 //         결과 : 실장 강엔 젤\nT.02-326-3913\nPR: >               F. 02-000-0000\nngel           M. 010-0000-0000\nE. niacom2014@naver.com\n엔젤시 엔젤구 엔젤로 1004,\n엔젤타워 1004충\n
 //
-//         6. traineddata_best 4.1.0
+//         6. traineddata_best 4.1.0 default
 //         시간 : 약 1.9초
 //         결과 : 실장 강엔 젤\nT.02-326-3913\nPR: >               F. 02-000-0000\nngel           M. 010-0000-0000\nE. niacom2014@naver.com\n엔젤시 엔젤구 엔젤로 1004,\n엔젤타워 1004충\n
+        
+        
+        // lstmOnly
+        //시간 : 약 1.9초
+        // 실장 강엔 젤\nT.02-326-3913\nPR: >               F. 02-000-0000\nngel           M. 010-0000-0000\nE. niacom2014@naver.com\n엔젤시 엔젤구 엔젤로 1004,\n엔젤타워 1004충\n
         
     }
 
