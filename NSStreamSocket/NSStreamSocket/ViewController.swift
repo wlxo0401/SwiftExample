@@ -57,7 +57,6 @@ class ViewController: UIViewController, StreamDelegate {
     }
     
     private func fromServerData() {
-        
         DispatchQueue.global().async {
             while true {
                 let buffersize = 1024

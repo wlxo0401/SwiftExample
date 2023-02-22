@@ -16,14 +16,11 @@ class ViewController: UIViewController {
         
         self.readerView.delegate = self
         
-        
         if self.readerView.isRunning {
             self.readerView.stop()
         } else {
             self.readerView.start()
         }
-        
-        
     }
 
     override func viewDidAppear(_ animated: Bool) {
