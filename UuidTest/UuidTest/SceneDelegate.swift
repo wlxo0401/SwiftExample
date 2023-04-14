@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  UuidTest
+//  UUIDTEST
 //
 //  Created by 김지태 on 2023/04/14.
 //
