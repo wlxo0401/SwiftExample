@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3983C0AF29E843FF005F0D26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983C0AE29E843FF005F0D26 /* AppDelegate.swift */; };
+		3983C0B129E843FF005F0D26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983C0B029E843FF005F0D26 /* SceneDelegate.swift */; };
+		3983C0B629E843FF005F0D26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3983C0B429E843FF005F0D26 /* Main.storyboard */; };
+		3983C0B829E843FF005F0D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3983C0B729E843FF005F0D26 /* Assets.xcassets */; };
+		3983C0BB29E843FF005F0D26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3983C0B929E843FF005F0D26 /* LaunchScreen.storyboard */; };
+		3983C0C629E843FF005F0D26 /* SlideViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983C0C529E843FF005F0D26 /* SlideViewControllerTests.swift */; };
+		3983C0D029E843FF005F0D26 /* SlideViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983C0CF29E843FF005F0D26 /* SlideViewControllerUITests.swift */; };
+		3983C0D229E843FF005F0D26 /* SlideViewControllerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983C0D129E843FF005F0D26 /* SlideViewControllerUITestsLaunchTests.swift */; };
+		3983C0DF29E84459005F0D26 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983C0DE29E84459005F0D26 /* OneViewController.swift */; };
+		3983C0E129E8446E005F0D26 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983C0E029E8446E005F0D26 /* TwoViewController.swift */; };
+		3983C0E329E8448F005F0D26 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983C0E229E8448F005F0D26 /* ThreeViewController.swift */; };
+		3983C0E529E84565005F0D26 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983C0E429E84565005F0D26 /* MyTabBarController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3983C0C229E843FF005F0D26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3983C0A329E843FF005F0D26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3983C0AA29E843FF005F0D26;
+			remoteInfo = SlideViewController;
+		};
+		3983C0CC29E843FF005F0D26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3983C0A329E843FF005F0D26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3983C0AA29E843FF005F0D26;
+			remoteInfo = SlideViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3983C0AB29E843FF005F0D26 /* SlideViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3983C0AE29E843FF005F0D26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3983C0B029E843FF005F0D26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3983C0B529E843FF005F0D26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3983C0B729E843FF005F0D26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3983C0BA29E843FF005F0D26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3983C0BC29E843FF005F0D26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3983C0C129E843FF005F0D26 /* SlideViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3983C0C529E843FF005F0D26 /* SlideViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideViewControllerTests.swift; sourceTree = "<group>"; };
+		3983C0CB29E843FF005F0D26 /* SlideViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3983C0CF29E843FF005F0D26 /* SlideViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideViewControllerUITests.swift; sourceTree = "<group>"; };
+		3983C0D129E843FF005F0D26 /* SlideViewControllerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideViewControllerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3983C0DE29E84459005F0D26 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
+		3983C0E029E8446E005F0D26 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		3983C0E229E8448F005F0D26 /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
+		3983C0E429E84565005F0D26 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3983C0A829E843FF005F0D26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3983C0BE29E843FF005F0D26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3983C0C829E843FF005F0D26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3983C0A229E843FF005F0D26 = {
+			isa = PBXGroup;
+			children = (
+				3983C0AD29E843FF005F0D26 /* SlideViewController */,
+				3983C0C429E843FF005F0D26 /* SlideViewControllerTests */,
+				3983C0CE29E843FF005F0D26 /* SlideViewControllerUITests */,
+				3983C0AC29E843FF005F0D26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3983C0AC29E843FF005F0D26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3983C0AB29E843FF005F0D26 /* SlideViewController.app */,
+				3983C0C129E843FF005F0D26 /* SlideViewControllerTests.xctest */,
+				3983C0CB29E843FF005F0D26 /* SlideViewControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3983C0AD29E843FF005F0D26 /* SlideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3983C0AE29E843FF005F0D26 /* AppDelegate.swift */,
+				3983C0B029E843FF005F0D26 /* SceneDelegate.swift */,
+				3983C0E429E84565005F0D26 /* MyTabBarController.swift */,
+				3983C0DE29E84459005F0D26 /* OneViewController.swift */,
+				3983C0E029E8446E005F0D26 /* TwoViewController.swift */,
+				3983C0E229E8448F005F0D26 /* ThreeViewController.swift */,
+				3983C0B429E843FF005F0D26 /* Main.storyboard */,
+				3983C0B729E843FF005F0D26 /* Assets.xcassets */,
+				3983C0B929E843FF005F0D26 /* LaunchScreen.storyboard */,
+				3983C0BC29E843FF005F0D26 /* Info.plist */,
+			);
+			path = SlideViewController;
+			sourceTree = "<group>";
+		};
+		3983C0C429E843FF005F0D26 /* SlideViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3983C0C529E843FF005F0D26 /* SlideViewControllerTests.swift */,
+			);
+			path = SlideViewControllerTests;
+			sourceTree = "<group>";
+		};
+		3983C0CE29E843FF005F0D26 /* SlideViewControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3983C0CF29E843FF005F0D26 /* SlideViewControllerUITests.swift */,
+				3983C0D129E843FF005F0D26 /* SlideViewControllerUITestsLaunchTests.swift */,
+			);
+			path = SlideViewControllerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3983C0AA29E843FF005F0D26 /* SlideViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3983C0D529E843FF005F0D26 /* Build configuration list for PBXNativeTarget "SlideViewController" */;
+			buildPhases = (
+				3983C0A729E843FF005F0D26 /* Sources */,
+				3983C0A829E843FF005F0D26 /* Frameworks */,
+				3983C0A929E843FF005F0D26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlideViewController;
+			productName = SlideViewController;
+			productReference = 3983C0AB29E843FF005F0D26 /* SlideViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3983C0C029E843FF005F0D26 /* SlideViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3983C0D829E843FF005F0D26 /* Build configuration list for PBXNativeTarget "SlideViewControllerTests" */;
+			buildPhases = (
+				3983C0BD29E843FF005F0D26 /* Sources */,
+				3983C0BE29E843FF005F0D26 /* Frameworks */,
+				3983C0BF29E843FF005F0D26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3983C0C329E843FF005F0D26 /* PBXTargetDependency */,
+			);
+			name = SlideViewControllerTests;
+			productName = SlideViewControllerTests;
+			productReference = 3983C0C129E843FF005F0D26 /* SlideViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3983C0CA29E843FF005F0D26 /* SlideViewControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3983C0DB29E843FF005F0D26 /* Build configuration list for PBXNativeTarget "SlideViewControllerUITests" */;
+			buildPhases = (
+				3983C0C729E843FF005F0D26 /* Sources */,
+				3983C0C829E843FF005F0D26 /* Frameworks */,
+				3983C0C929E843FF005F0D26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3983C0CD29E843FF005F0D26 /* PBXTargetDependency */,
+			);
+			name = SlideViewControllerUITests;
+			productName = SlideViewControllerUITests;
+			productReference = 3983C0CB29E843FF005F0D26 /* SlideViewControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3983C0A329E843FF005F0D26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3983C0AA29E843FF005F0D26 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					3983C0C029E843FF005F0D26 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 3983C0AA29E843FF005F0D26;
+					};
+					3983C0CA29E843FF005F0D26 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 3983C0AA29E843FF005F0D26;
+					};
+				};
+			};
+			buildConfigurationList = 3983C0A629E843FF005F0D26 /* Build configuration list for PBXProject "SlideViewController" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3983C0A229E843FF005F0D26;
+			productRefGroup = 3983C0AC29E843FF005F0D26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3983C0AA29E843FF005F0D26 /* SlideViewController */,
+				3983C0C029E843FF005F0D26 /* SlideViewControllerTests */,
+				3983C0CA29E843FF005F0D26 /* SlideViewControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3983C0A929E843FF005F0D26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3983C0BB29E843FF005F0D26 /* LaunchScreen.storyboard in Resources */,
+				3983C0B829E843FF005F0D26 /* Assets.xcassets in Resources */,
+				3983C0B629E843FF005F0D26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3983C0BF29E843FF005F0D26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3983C0C929E843FF005F0D26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3983C0A729E843FF005F0D26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3983C0E529E84565005F0D26 /* MyTabBarController.swift in Sources */,
+				3983C0E129E8446E005F0D26 /* TwoViewController.swift in Sources */,
+				3983C0DF29E84459005F0D26 /* OneViewController.swift in Sources */,
+				3983C0AF29E843FF005F0D26 /* AppDelegate.swift in Sources */,
+				3983C0B129E843FF005F0D26 /* SceneDelegate.swift in Sources */,
+				3983C0E329E8448F005F0D26 /* ThreeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3983C0BD29E843FF005F0D26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3983C0C629E843FF005F0D26 /* SlideViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3983C0C729E843FF005F0D26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3983C0D029E843FF005F0D26 /* SlideViewControllerUITests.swift in Sources */,
+				3983C0D229E843FF005F0D26 /* SlideViewControllerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3983C0C329E843FF005F0D26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3983C0AA29E843FF005F0D26 /* SlideViewController */;
+			targetProxy = 3983C0C229E843FF005F0D26 /* PBXContainerItemProxy */;
+		};
+		3983C0CD29E843FF005F0D26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3983C0AA29E843FF005F0D26 /* SlideViewController */;
+			targetProxy = 3983C0CC29E843FF005F0D26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3983C0B429E843FF005F0D26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3983C0B529E843FF005F0D26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3983C0B929E843FF005F0D26 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3983C0BA29E843FF005F0D26 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3983C0D329E843FF005F0D26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3983C0D429E843FF005F0D26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3983C0D629E843FF005F0D26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59NQ3YR32K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SlideViewController/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SlideViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3983C0D729E843FF005F0D26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59NQ3YR32K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SlideViewController/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SlideViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3983C0D929E843FF005F0D26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59NQ3YR32K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SlideViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlideViewController.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SlideViewController";
+			};
+			name = Debug;
+		};
+		3983C0DA29E843FF005F0D26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59NQ3YR32K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SlideViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlideViewController.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SlideViewController";
+			};
+			name = Release;
+		};
+		3983C0DC29E843FF005F0D26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59NQ3YR32K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SlideViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SlideViewController;
+			};
+			name = Debug;
+		};
+		3983C0DD29E843FF005F0D26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59NQ3YR32K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SlideViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SlideViewController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3983C0A629E843FF005F0D26 /* Build configuration list for PBXProject "SlideViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3983C0D329E843FF005F0D26 /* Debug */,
+				3983C0D429E843FF005F0D26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3983C0D529E843FF005F0D26 /* Build configuration list for PBXNativeTarget "SlideViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3983C0D629E843FF005F0D26 /* Debug */,
+				3983C0D729E843FF005F0D26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3983C0D829E843FF005F0D26 /* Build configuration list for PBXNativeTarget "SlideViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3983C0D929E843FF005F0D26 /* Debug */,
+				3983C0DA29E843FF005F0D26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3983C0DB29E843FF005F0D26 /* Build configuration list for PBXNativeTarget "SlideViewControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3983C0DC29E843FF005F0D26 /* Debug */,
+				3983C0DD29E843FF005F0D26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3983C0A329E843FF005F0D26 /* Project object */;
+}
