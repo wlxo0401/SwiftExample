@@ -36,7 +36,6 @@ class ViewController: UIViewController {
         // 선택된 요일에 색
         self.fsCalendar.appearance.selectionColor = UIColor.blue
         
-        self.fsCalendar.s = .
     }
 
     @IBAction func leftButtonAction(_ sender: Any) {
