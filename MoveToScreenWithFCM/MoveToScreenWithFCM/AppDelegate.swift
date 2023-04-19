@@ -1,16 +1,19 @@
 //
 //  AppDelegate.swift
-//  PushStudy
+//  MoveToScreenWithFCM
 //
-//  Created by 김지태 on 2023/04/06.
+//  Created by 김지태 on 2023/04/19.
 //
 
 import UIKit
+import Firebase
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    let center = UNUserNotificationCenter.current()
 
+
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -20,18 +23,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         center.requestAuthorization(options: [.alert, .badge, .sound]) { granted, error in
             print(granted)
         }
-
-//         2. device 토큰 획득: application(_:didRegisterForRemoteNotificationsWithDeviceToken:) 메소드 호출
+        
+        // Firebase Config
+        FirebaseApp.configure()
+        
+        // 앱 메세지를 받는 Delegate
+        UNUserNotificationCenter.current().delegate = self
+        // Firebase Delegate
+        Messaging.messaging().delegate = self
+        // Notification 등록
         application.registerForRemoteNotifications()
-
-        center.delegate = self
+        
         
         return true
-    }
-    
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        let tokenString = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
-        print(tokenString)
     }
 
     // MARK: UISceneSession Lifecycle
@@ -51,7 +55,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
-extension AppDelegate: UNUserNotificationCenterDelegate {
+
+
+extension AppDelegate: UNUserNotificationCenterDelegate, MessagingDelegate {
+
+    public func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+        let firebaseToken = fcmToken ?? ""
+        print("firebase token: \(firebaseToken)")
+    }
+
+    
     // foreground에서 시스템 푸시를 수신했을 때 해당 메소드가 호출
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         
@@ -73,4 +86,6 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
       }
       
     }
+    
 }
+

@@ -19,7 +19,7 @@ class NotificationService: UNNotificationServiceExtension {
         if let bestAttemptContent = bestAttemptContent {
             // Modify the notification content here...
             bestAttemptContent.title = "\(bestAttemptContent.title) [modified]"
-            bestAttemptContent.body = "\(bestAttemptContent.body) 쿠쿠루삥뽕"
+            bestAttemptContent.body = "쿠쿠루삥뽕"
             contentHandler(bestAttemptContent)
         }
     }
