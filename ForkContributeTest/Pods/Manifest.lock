@@ -1,0 +1,31 @@
+PODS:
+  - Charts (4.1.0):
+    - Charts/Core (= 4.1.0)
+  - Charts/Core (4.1.0):
+    - SwiftAlgorithms (~> 1.0)
+  - SwiftAlgorithms (1.0.0)
+
+DEPENDENCIES:
+  - Charts (from `https://github.com/wlxo0401/Charts.git`, commit `374acb0d5613bdc471da885889160b7e3ccc92b6`)
+
+SPEC REPOS:
+  trunk:
+    - SwiftAlgorithms
+
+EXTERNAL SOURCES:
+  Charts:
+    :commit: 374acb0d5613bdc471da885889160b7e3ccc92b6
+    :git: https://github.com/wlxo0401/Charts.git
+
+CHECKOUT OPTIONS:
+  Charts:
+    :commit: 374acb0d5613bdc471da885889160b7e3ccc92b6
+    :git: https://github.com/wlxo0401/Charts.git
+
+SPEC CHECKSUMS:
+  Charts: 354f86803d11d9c35de280587fef50d1af063978
+  SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
+
+PODFILE CHECKSUM: 86fb625236f0ebfff8227bc76d4359c40d66462b
+
+COCOAPODS: 1.12.0

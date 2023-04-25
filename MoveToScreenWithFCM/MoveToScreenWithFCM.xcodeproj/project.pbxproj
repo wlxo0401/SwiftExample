@@ -15,6 +15,9 @@
 		39C1462629EF864500E3C4B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39C1462429EF864500E3C4B1 /* LaunchScreen.storyboard */; };
 		39C1462E29EF867100E3C4B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39C1462D29EF867100E3C4B1 /* GoogleService-Info.plist */; };
 		39C1463129EF86CB00E3C4B1 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 39C1463029EF86CB00E3C4B1 /* FirebaseMessaging */; };
+		39C1463429EF9A6A00E3C4B1 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C1463329EF9A6A00E3C4B1 /* TwoViewController.swift */; };
+		39C1463629EF9A7000E3C4B1 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C1463529EF9A7000E3C4B1 /* ThreeViewController.swift */; };
+		39C1463829EF9A7400E3C4B1 /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C1463729EF9A7400E3C4B1 /* FourViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		39C1462729EF864500E3C4B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39C1462D29EF867100E3C4B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		39C1463229EF899B00E3C4B1 /* MoveToScreenWithFCM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoveToScreenWithFCM.entitlements; sourceTree = "<group>"; };
+		39C1463329EF9A6A00E3C4B1 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		39C1463529EF9A7000E3C4B1 /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
+		39C1463729EF9A7400E3C4B1 /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,9 @@
 				39C1461929EF864400E3C4B1 /* AppDelegate.swift */,
 				39C1461B29EF864400E3C4B1 /* SceneDelegate.swift */,
 				39C1461D29EF864400E3C4B1 /* ViewController.swift */,
+				39C1463329EF9A6A00E3C4B1 /* TwoViewController.swift */,
+				39C1463529EF9A7000E3C4B1 /* ThreeViewController.swift */,
+				39C1463729EF9A7400E3C4B1 /* FourViewController.swift */,
 				39C1461F29EF864400E3C4B1 /* Main.storyboard */,
 				39C1462229EF864500E3C4B1 /* Assets.xcassets */,
 				39C1462429EF864500E3C4B1 /* LaunchScreen.storyboard */,
@@ -154,7 +163,10 @@
 			files = (
 				39C1461E29EF864400E3C4B1 /* ViewController.swift in Sources */,
 				39C1461A29EF864400E3C4B1 /* AppDelegate.swift in Sources */,
+				39C1463829EF9A7400E3C4B1 /* FourViewController.swift in Sources */,
 				39C1461C29EF864400E3C4B1 /* SceneDelegate.swift in Sources */,
+				39C1463429EF9A6A00E3C4B1 /* TwoViewController.swift in Sources */,
+				39C1463629EF9A7000E3C4B1 /* ThreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

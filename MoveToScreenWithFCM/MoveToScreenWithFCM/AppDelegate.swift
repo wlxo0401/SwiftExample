@@ -69,23 +69,86 @@ extension AppDelegate: UNUserNotificationCenterDelegate, MessagingDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         
         print("ㅎㅇ")
-        
         completionHandler([.sound, .badge, .banner])
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void ) {
       let userInfo = response.notification.request.content.userInfo
       print(userInfo)
-      
-      if response.actionIdentifier == UNNotificationDefaultActionIdentifier {
-          print("시스템 푸시 탭!")
-          
-          
-          UserDefaults.standard.set(response.notification.request.content.body, forKey: "currentResourceVersion")
-          
-      }
+        
+        
+        
+        let application = UIApplication.shared
+                
+        //앱이 켜져있는 상태에서 푸쉬 알림을 눌렀을 때
+//        if application.applicationState == .active {
+//            print("푸쉬알림 탭(앱 켜져있음)")
+//            UserDefaults.standard.set("푸쉬알림 탭(앱 켜져있음)", forKey: "currentResourceVersion")
+//        }
+//
+//        //앱이 꺼져있는 상태에서 푸쉬 알림을 눌렀을 때
+//        if application.applicationState == .inactive {
+//          print("푸쉬알림 탭(앱 꺼져있음)")
+//            UserDefaults.standard.set("푸쉬알림 탭(앱 꺼져있음)", forKey: "currentResourceVersion")
+//        }
+        
+        
+        
+        guard
+            let aps = userInfo[AnyHashable("aps")] as? NSDictionary,
+            let alert = aps["alert"] as? NSDictionary,
+            let body = alert["body"] as? String,
+            let title = alert["title"] as? String
+            else {
+                // handle any error here
+                return
+            }
+
+        guard let data = userInfo[AnyHashable("screen")] as? String else { return }
+        
+        
+        UserDefaults.standard.set(data, forKey: "currentResourceVersion")
+        print("Title: \(title) \nBody:\(body) \ndata:\(data)")
+        
+        
+        // 푸시알림 클릭시 화면 이동
+        if let apsData = userInfo["aps"] as? [String : AnyObject] {
+            if let subtitleData = apsData["subtitle"] as? [String : Any] {
+                // 내가 필요한 pidx라는 데이터는 aps > alert > pidx 에 들어있었다.
+                print(subtitleData)
+            }
+        }
+        
+        if let topViewController = UIApplication.shared.windows.first?.rootViewController?.topmostViewController {
+            // 최상위 뷰 컨트롤러 사용
+            if let navigationController = topViewController.navigationController {
+                navigationController.popToRootViewController(animated: true)
+            } else {
+                topViewController.dismiss(animated: true, completion: {
+                    
+                    if let topViewController = UIApplication.shared.windows.first?.rootViewController?.topmostViewController {
+                        if let navigationController = topViewController.navigationController {
+                            navigationController.popToRootViewController(animated: true)
+                        }
+                    }
+                })
+            }
+        }
+
       
     }
     
 }
-
+extension UIViewController {
+    var topmostViewController: UIViewController? {
+        if let navigationController = self as? UINavigationController {
+            return navigationController.visibleViewController?.topmostViewController
+        } else if let tabBarController = self as? UITabBarController {
+            return tabBarController.selectedViewController?.topmostViewController
+        } else if let presentedViewController = presentedViewController {
+            return presentedViewController.topmostViewController
+        } else {
+            return self
+        }
+    }
+}

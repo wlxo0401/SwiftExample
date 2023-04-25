@@ -1,0 +1,10 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ForkContributeTest' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ForkContributeTest
+  pod 'Charts', :git => 'https://github.com/wlxo0401/Charts.git', :commit => 'f8327ffc43a64d13feba8309105f78fb9d83b776'
+end
