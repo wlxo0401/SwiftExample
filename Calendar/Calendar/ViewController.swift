@@ -22,9 +22,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        
-        self.fsCalendar.dataSource = self
-        self.fsCalendar.delegate = self
+//
+//        self.fsCalendar.dataSource = self
+//        self.fsCalendar.delegate = self
         // 1번째 방법 (추천)
         self.fsCalendar.locale = Locale(identifier: "ko_KR")
         // 상단 가운데 현재 월 포맷
@@ -55,12 +55,12 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: FSCalendarDataSource {
-    
-}
-
-extension ViewController: FSCalendarDelegate {
-    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-        print("선택됨")
-    }
-}
+//extension ViewController: FSCalendarDataSource {
+//    
+//}
+//
+//extension ViewController: FSCalendarDelegate {
+//    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+//        print("선택됨")
+//    }
+//}
