@@ -6,5 +6,7 @@ target 'ChartsLibTest' do
   use_frameworks!
 
   # Pods for ChartsLibTest
+
   pod 'Charts'
+
 end
