@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ExP-Vz-DEc">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="Ioc-hr-LpV">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="is7-Kh-6SQ" customClass="LoginViewController" customModule="FirebaseAuthSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qd6-vv-pYh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Fud-8M-H9N">
+                                <rect key="frame" x="24" y="674" width="345" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2e-G2-sjf">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="이메일"/>
+                                        <connections>
+                                            <action selector="emailButtonAction:" destination="is7-Kh-6SQ" eventType="touchUpInside" id="Qc2-QK-hKF"/>
+                                            <segue destination="D8h-IC-RYX" kind="show" id="7cF-tu-JsK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9z-9e-5S8">
+                                        <rect key="frame" x="0.0" y="40" width="345" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="구글"/>
+                                        <connections>
+                                            <action selector="googleButtonAction:" destination="is7-Kh-6SQ" eventType="touchUpInside" id="5Wa-TV-rxK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUq-N8-pag" customClass="ASAuthorizationAppleIDButton">
+                                        <rect key="frame" x="0.0" y="80" width="345" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="애플"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="76m-1Z-y9Z"/>
+                                    <constraint firstItem="k9z-9e-5S8" firstAttribute="leading" secondItem="Fud-8M-H9N" secondAttribute="leading" id="7DP-uI-nQp"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q2e-G2-sjf" secondAttribute="trailing" id="9pI-SH-nIo"/>
+                                    <constraint firstItem="Q2e-G2-sjf" firstAttribute="leading" secondItem="Fud-8M-H9N" secondAttribute="leading" id="FbH-YD-v9X"/>
+                                    <constraint firstItem="EUq-N8-pag" firstAttribute="leading" secondItem="Fud-8M-H9N" secondAttribute="leading" id="HPb-bW-ERw"/>
+                                    <constraint firstAttribute="trailing" secondItem="EUq-N8-pag" secondAttribute="trailing" id="iiJ-xa-NeO"/>
+                                    <constraint firstAttribute="trailing" secondItem="k9z-9e-5S8" secondAttribute="trailing" id="q6O-K5-ovM"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mqc-Jj-zEd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Mqc-Jj-zEd" firstAttribute="trailing" secondItem="Fud-8M-H9N" secondAttribute="trailing" constant="24" id="AgB-fM-mM0"/>
+                            <constraint firstItem="Fud-8M-H9N" firstAttribute="leading" secondItem="Mqc-Jj-zEd" secondAttribute="leading" constant="24" id="mMC-fe-Wfb"/>
+                            <constraint firstItem="Mqc-Jj-zEd" firstAttribute="bottom" secondItem="Fud-8M-H9N" secondAttribute="bottom" constant="24" id="xGc-BC-jxi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zCy-wF-ik9"/>
+                    <connections>
+                        <outlet property="appleButton" destination="EUq-N8-pag" id="LJl-ms-38P"/>
+                        <outlet property="emailButton" destination="Q2e-G2-sjf" id="UqZ-JJ-iub"/>
+                        <outlet property="googleButton" destination="k9z-9e-5S8" id="WPy-fz-gdI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kxm-DC-VsH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953.43511450381675" y="-374.64788732394368"/>
+        </scene>
+        <!--이메일/비밀번호 입력하기-->
+        <scene sceneID="BHE-fC-v15">
+            <objects>
+                <viewController storyboardIdentifier="EnterEmailViewController" id="D8h-IC-RYX" customClass="EnterEmailViewController" customModule="FirebaseAuthSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vWL-45-wxo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="djg-hr-Ttn">
+                                <rect key="frame" x="24" y="349" width="345" height="154"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hBX-3p-Rso">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Ss-BP-Er2">
+                                        <rect key="frame" x="0.0" y="62" width="345" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDo-g6-fAN">
+                                        <rect key="frame" x="0.0" y="124" width="345" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="tvb-ZT-35p"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="회원가입"/>
+                                        <connections>
+                                            <action selector="nextButtonAction:" destination="D8h-IC-RYX" eventType="touchUpInside" id="cQv-3J-JMT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hSJ-Sk-bfs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hSJ-Sk-bfs" firstAttribute="trailing" secondItem="djg-hr-Ttn" secondAttribute="trailing" constant="24" id="gSh-qk-LFz"/>
+                            <constraint firstItem="djg-hr-Ttn" firstAttribute="centerY" secondItem="vWL-45-wxo" secondAttribute="centerY" id="uhA-Xh-Shz"/>
+                            <constraint firstItem="djg-hr-Ttn" firstAttribute="leading" secondItem="hSJ-Sk-bfs" secondAttribute="leading" constant="24" id="uvp-om-wEb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="이메일/비밀번호 입력하기" id="lxQ-xi-Ea1"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="hBX-3p-Rso" id="tKS-BA-Cuj"/>
+                        <outlet property="nextButton" destination="HDo-g6-fAN" id="Qva-3g-2hI"/>
+                        <outlet property="passwordTextField" destination="8Ss-BP-Er2" id="5nE-Zv-cIR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rf8-Ue-sE1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837" y="-376"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="HaH-If-fIp">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x2a-Iz-xpY" customClass="MainViewController" customModule="FirebaseAuthSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vm4-sI-J5R">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGU-EP-I3h">
+                                <rect key="frame" x="155" y="408.66666666666669" width="83" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="로그아웃"/>
+                                <connections>
+                                    <action selector="logOutButtonAction:" destination="x2a-Iz-xpY" eventType="touchUpInside" id="V2d-ik-s2X"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbx-gm-GDz">
+                                <rect key="frame" x="175.66666666666666" y="357.66666666666669" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpo-OR-L1f">
+                                <rect key="frame" x="138" y="473.66666666666669" width="117" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="비밀번호 변경"/>
+                                <connections>
+                                    <action selector="resetPasswordButtonAction:" destination="x2a-Iz-xpY" eventType="touchUpInside" id="kGU-QX-uqK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LRl-eb-wx4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vpo-OR-L1f" firstAttribute="centerX" secondItem="vm4-sI-J5R" secondAttribute="centerX" id="6hr-2V-EeW"/>
+                            <constraint firstItem="QGU-EP-I3h" firstAttribute="centerY" secondItem="vm4-sI-J5R" secondAttribute="centerY" id="E4v-Ou-VWv"/>
+                            <constraint firstItem="Xbx-gm-GDz" firstAttribute="centerX" secondItem="vm4-sI-J5R" secondAttribute="centerX" id="X6B-4S-hmK"/>
+                            <constraint firstItem="QGU-EP-I3h" firstAttribute="centerX" secondItem="vm4-sI-J5R" secondAttribute="centerX" id="cWj-Md-ibs"/>
+                            <constraint firstItem="vpo-OR-L1f" firstAttribute="top" secondItem="QGU-EP-I3h" secondAttribute="bottom" constant="30" id="cYJ-I6-Cri"/>
+                            <constraint firstItem="QGU-EP-I3h" firstAttribute="top" secondItem="Xbx-gm-GDz" secondAttribute="bottom" constant="30" id="ypf-iZ-2j2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logoutButton" destination="QGU-EP-I3h" id="Jfs-RS-UrX"/>
+                        <outlet property="resetPasswordButton" destination="vpo-OR-L1f" id="AW2-q4-IQ9"/>
+                        <outlet property="tempLabel" destination="Xbx-gm-GDz" id="3Dy-jd-OE2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g8X-mV-XLO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2682" y="-377"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0Zv-6G-O0Z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ExP-Vz-DEc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="faT-sg-fv5">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="is7-Kh-6SQ" kind="relationship" relationship="rootViewController" id="sdo-uJ-uR5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rIZ-Sa-eQb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26.717557251908396" y="-374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
