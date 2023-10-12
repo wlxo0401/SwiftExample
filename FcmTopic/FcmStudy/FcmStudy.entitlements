@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>aps-environment</key>
-	<string>development</string>
 	<key>com.apple.security.application-groups</key>
 	<array>
 		<string>group.CY-68C1BE3C-AC84-11E9-B5BC-3FFEA8012F2C.com.nianticlabs.pokemongo</string>

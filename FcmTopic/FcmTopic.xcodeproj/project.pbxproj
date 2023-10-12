@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		39189D312A36ABCF0076D9A7 /* PBXContainerItemProxy */ = {
+		39561FF92A5308D4006521AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3955C2012A34953D008A2CFB /* Project object */;
 			proxyType = 1;
@@ -48,6 +48,7 @@
 		39189D2C2A36ABCF0076D9A7 /* FcmStudy.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FcmStudy.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		39189D2E2A36ABCF0076D9A7 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		39189D302A36ABCF0076D9A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		391B499A2A530874003996BB /* FcmStudy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FcmStudy.entitlements; sourceTree = "<group>"; };
 		3955C2092A34953D008A2CFB /* FcmTopic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FcmTopic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3955C20C2A34953D008A2CFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3955C20E2A34953D008A2CFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		39189D2D2A36ABCF0076D9A7 /* FcmStudy */ = {
 			isa = PBXGroup;
 			children = (
+				391B499A2A530874003996BB /* FcmStudy.entitlements */,
 				39189D2E2A36ABCF0076D9A7 /* NotificationService.swift */,
 				39189D302A36ABCF0076D9A7 /* Info.plist */,
 			);
@@ -153,7 +155,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				39189D322A36ABCF0076D9A7 /* PBXTargetDependency */,
+				39561FFA2A5308D4006521AA /* PBXTargetDependency */,
 			);
 			name = FcmTopic;
 			packageProductDependencies = (
@@ -246,10 +248,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		39189D322A36ABCF0076D9A7 /* PBXTargetDependency */ = {
+		39561FFA2A5308D4006521AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 39189D2B2A36ABCF0076D9A7 /* FcmStudy */;
-			targetProxy = 39189D312A36ABCF0076D9A7 /* PBXContainerItemProxy */;
+			targetProxy = 39561FF92A5308D4006521AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -276,6 +278,7 @@
 		39189D352A36ABCF0076D9A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FcmStudy/FcmStudy.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 59NQ3YR32K;
@@ -302,6 +305,7 @@
 		39189D362A36ABCF0076D9A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FcmStudy/FcmStudy.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 59NQ3YR32K;
