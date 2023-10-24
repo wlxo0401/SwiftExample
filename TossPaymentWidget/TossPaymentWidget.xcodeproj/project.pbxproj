@@ -7,107 +7,107 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		393FAE492ACFF13500190D49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393FAE482ACFF13500190D49 /* AppDelegate.swift */; };
-		393FAE4B2ACFF13500190D49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393FAE4A2ACFF13500190D49 /* SceneDelegate.swift */; };
-		393FAE4D2ACFF13500190D49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393FAE4C2ACFF13500190D49 /* ViewController.swift */; };
-		393FAE502ACFF13500190D49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 393FAE4E2ACFF13500190D49 /* Main.storyboard */; };
-		393FAE522ACFF13600190D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 393FAE512ACFF13600190D49 /* Assets.xcassets */; };
-		393FAE552ACFF13600190D49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 393FAE532ACFF13600190D49 /* LaunchScreen.storyboard */; };
-		393FAE5E2ACFF15C00190D49 /* TossPayments in Frameworks */ = {isa = PBXBuildFile; productRef = 393FAE5D2ACFF15C00190D49 /* TossPayments */; };
+		397A7F1E2AE76CBB00AB9913 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A7F1D2AE76CBB00AB9913 /* AppDelegate.swift */; };
+		397A7F202AE76CBB00AB9913 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A7F1F2AE76CBB00AB9913 /* SceneDelegate.swift */; };
+		397A7F222AE76CBB00AB9913 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A7F212AE76CBB00AB9913 /* ViewController.swift */; };
+		397A7F252AE76CBB00AB9913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397A7F232AE76CBB00AB9913 /* Main.storyboard */; };
+		397A7F272AE76CBC00AB9913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 397A7F262AE76CBC00AB9913 /* Assets.xcassets */; };
+		397A7F2A2AE76CBC00AB9913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397A7F282AE76CBC00AB9913 /* LaunchScreen.storyboard */; };
+		397A7F332AE76D1A00AB9913 /* TossPayments in Frameworks */ = {isa = PBXBuildFile; productRef = 397A7F322AE76D1A00AB9913 /* TossPayments */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		393FAE452ACFF13500190D49 /* TossPaymentWidgetSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TossPaymentWidgetSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		393FAE482ACFF13500190D49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		393FAE4A2ACFF13500190D49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		393FAE4C2ACFF13500190D49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		393FAE4F2ACFF13500190D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		393FAE512ACFF13600190D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		393FAE542ACFF13600190D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		393FAE562ACFF13600190D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		397A7F1A2AE76CBB00AB9913 /* TossPaymentWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TossPaymentWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		397A7F1D2AE76CBB00AB9913 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		397A7F1F2AE76CBB00AB9913 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		397A7F212AE76CBB00AB9913 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		397A7F242AE76CBB00AB9913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		397A7F262AE76CBC00AB9913 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		397A7F292AE76CBC00AB9913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		397A7F2B2AE76CBC00AB9913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		393FAE422ACFF13500190D49 /* Frameworks */ = {
+		397A7F172AE76CBB00AB9913 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				393FAE5E2ACFF15C00190D49 /* TossPayments in Frameworks */,
+				397A7F332AE76D1A00AB9913 /* TossPayments in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		393FAE3C2ACFF13500190D49 = {
+		397A7F112AE76CBB00AB9913 = {
 			isa = PBXGroup;
 			children = (
-				393FAE472ACFF13500190D49 /* TossPaymentWidgetSample */,
-				393FAE462ACFF13500190D49 /* Products */,
+				397A7F1C2AE76CBB00AB9913 /* TossPaymentWidget */,
+				397A7F1B2AE76CBB00AB9913 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		393FAE462ACFF13500190D49 /* Products */ = {
+		397A7F1B2AE76CBB00AB9913 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				393FAE452ACFF13500190D49 /* TossPaymentWidgetSample.app */,
+				397A7F1A2AE76CBB00AB9913 /* TossPaymentWidget.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		393FAE472ACFF13500190D49 /* TossPaymentWidgetSample */ = {
+		397A7F1C2AE76CBB00AB9913 /* TossPaymentWidget */ = {
 			isa = PBXGroup;
 			children = (
-				393FAE482ACFF13500190D49 /* AppDelegate.swift */,
-				393FAE4A2ACFF13500190D49 /* SceneDelegate.swift */,
-				393FAE4C2ACFF13500190D49 /* ViewController.swift */,
-				393FAE4E2ACFF13500190D49 /* Main.storyboard */,
-				393FAE512ACFF13600190D49 /* Assets.xcassets */,
-				393FAE532ACFF13600190D49 /* LaunchScreen.storyboard */,
-				393FAE562ACFF13600190D49 /* Info.plist */,
+				397A7F1D2AE76CBB00AB9913 /* AppDelegate.swift */,
+				397A7F1F2AE76CBB00AB9913 /* SceneDelegate.swift */,
+				397A7F212AE76CBB00AB9913 /* ViewController.swift */,
+				397A7F232AE76CBB00AB9913 /* Main.storyboard */,
+				397A7F262AE76CBC00AB9913 /* Assets.xcassets */,
+				397A7F282AE76CBC00AB9913 /* LaunchScreen.storyboard */,
+				397A7F2B2AE76CBC00AB9913 /* Info.plist */,
 			);
-			path = TossPaymentWidgetSample;
+			path = TossPaymentWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		393FAE442ACFF13500190D49 /* TossPaymentWidgetSample */ = {
+		397A7F192AE76CBB00AB9913 /* TossPaymentWidget */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 393FAE592ACFF13600190D49 /* Build configuration list for PBXNativeTarget "TossPaymentWidgetSample" */;
+			buildConfigurationList = 397A7F2E2AE76CBC00AB9913 /* Build configuration list for PBXNativeTarget "TossPaymentWidget" */;
 			buildPhases = (
-				393FAE412ACFF13500190D49 /* Sources */,
-				393FAE422ACFF13500190D49 /* Frameworks */,
-				393FAE432ACFF13500190D49 /* Resources */,
+				397A7F162AE76CBB00AB9913 /* Sources */,
+				397A7F172AE76CBB00AB9913 /* Frameworks */,
+				397A7F182AE76CBB00AB9913 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TossPaymentWidgetSample;
+			name = TossPaymentWidget;
 			packageProductDependencies = (
-				393FAE5D2ACFF15C00190D49 /* TossPayments */,
+				397A7F322AE76D1A00AB9913 /* TossPayments */,
 			);
-			productName = TossPaymentWidgetSample;
-			productReference = 393FAE452ACFF13500190D49 /* TossPaymentWidgetSample.app */;
+			productName = TossPaymentWidget;
+			productReference = 397A7F1A2AE76CBB00AB9913 /* TossPaymentWidget.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		393FAE3D2ACFF13500190D49 /* Project object */ = {
+		397A7F122AE76CBB00AB9913 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					393FAE442ACFF13500190D49 = {
-						CreatedOnToolsVersion = 14.3.1;
+					397A7F192AE76CBB00AB9913 = {
+						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
 			};
-			buildConfigurationList = 393FAE402ACFF13500190D49 /* Build configuration list for PBXProject "TossPaymentWidgetSample" */;
+			buildConfigurationList = 397A7F152AE76CBB00AB9913 /* Build configuration list for PBXProject "TossPaymentWidget" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,58 +115,58 @@
 				en,
 				Base,
 			);
-			mainGroup = 393FAE3C2ACFF13500190D49;
+			mainGroup = 397A7F112AE76CBB00AB9913;
 			packageReferences = (
-				393FAE5C2ACFF15C00190D49 /* XCRemoteSwiftPackageReference "payment-sdk-ios" */,
+				397A7F312AE76D1A00AB9913 /* XCRemoteSwiftPackageReference "payment-sdk-ios" */,
 			);
-			productRefGroup = 393FAE462ACFF13500190D49 /* Products */;
+			productRefGroup = 397A7F1B2AE76CBB00AB9913 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				393FAE442ACFF13500190D49 /* TossPaymentWidgetSample */,
+				397A7F192AE76CBB00AB9913 /* TossPaymentWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		393FAE432ACFF13500190D49 /* Resources */ = {
+		397A7F182AE76CBB00AB9913 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				393FAE552ACFF13600190D49 /* LaunchScreen.storyboard in Resources */,
-				393FAE522ACFF13600190D49 /* Assets.xcassets in Resources */,
-				393FAE502ACFF13500190D49 /* Main.storyboard in Resources */,
+				397A7F2A2AE76CBC00AB9913 /* LaunchScreen.storyboard in Resources */,
+				397A7F272AE76CBC00AB9913 /* Assets.xcassets in Resources */,
+				397A7F252AE76CBB00AB9913 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		393FAE412ACFF13500190D49 /* Sources */ = {
+		397A7F162AE76CBB00AB9913 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				393FAE4D2ACFF13500190D49 /* ViewController.swift in Sources */,
-				393FAE492ACFF13500190D49 /* AppDelegate.swift in Sources */,
-				393FAE4B2ACFF13500190D49 /* SceneDelegate.swift in Sources */,
+				397A7F222AE76CBB00AB9913 /* ViewController.swift in Sources */,
+				397A7F1E2AE76CBB00AB9913 /* AppDelegate.swift in Sources */,
+				397A7F202AE76CBB00AB9913 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		393FAE4E2ACFF13500190D49 /* Main.storyboard */ = {
+		397A7F232AE76CBB00AB9913 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				393FAE4F2ACFF13500190D49 /* Base */,
+				397A7F242AE76CBB00AB9913 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		393FAE532ACFF13600190D49 /* LaunchScreen.storyboard */ = {
+		397A7F282AE76CBC00AB9913 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				393FAE542ACFF13600190D49 /* Base */,
+				397A7F292AE76CBC00AB9913 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -174,10 +174,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		393FAE572ACFF13600190D49 /* Debug */ = {
+		397A7F2C2AE76CBC00AB9913 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -210,7 +211,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -224,20 +226,22 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		393FAE582ACFF13600190D49 /* Release */ = {
+		397A7F2D2AE76CBC00AB9913 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -270,7 +274,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -278,17 +283,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		393FAE5A2ACFF13600190D49 /* Debug */ = {
+		397A7F2F2AE76CBC00AB9913 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -297,19 +302,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 59NQ3YR32K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TossPaymentWidgetSample/Info.plist;
+				INFOPLIST_FILE = TossPaymentWidget/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kimjitae.TossPaymentWidgetSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kimjitae.TossPaymentWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -320,7 +324,7 @@
 			};
 			name = Debug;
 		};
-		393FAE5B2ACFF13600190D49 /* Release */ = {
+		397A7F302AE76CBC00AB9913 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -329,19 +333,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 59NQ3YR32K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TossPaymentWidgetSample/Info.plist;
+				INFOPLIST_FILE = TossPaymentWidget/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kimjitae.TossPaymentWidgetSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kimjitae.TossPaymentWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -355,20 +358,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		393FAE402ACFF13500190D49 /* Build configuration list for PBXProject "TossPaymentWidgetSample" */ = {
+		397A7F152AE76CBB00AB9913 /* Build configuration list for PBXProject "TossPaymentWidget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				393FAE572ACFF13600190D49 /* Debug */,
-				393FAE582ACFF13600190D49 /* Release */,
+				397A7F2C2AE76CBC00AB9913 /* Debug */,
+				397A7F2D2AE76CBC00AB9913 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		393FAE592ACFF13600190D49 /* Build configuration list for PBXNativeTarget "TossPaymentWidgetSample" */ = {
+		397A7F2E2AE76CBC00AB9913 /* Build configuration list for PBXNativeTarget "TossPaymentWidget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				393FAE5A2ACFF13600190D49 /* Debug */,
-				393FAE5B2ACFF13600190D49 /* Release */,
+				397A7F2F2AE76CBC00AB9913 /* Debug */,
+				397A7F302AE76CBC00AB9913 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -376,23 +379,23 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		393FAE5C2ACFF15C00190D49 /* XCRemoteSwiftPackageReference "payment-sdk-ios" */ = {
+		397A7F312AE76D1A00AB9913 /* XCRemoteSwiftPackageReference "payment-sdk-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/tosspayments/payment-sdk-ios.git";
 			requirement = {
-				kind = exactVersion;
-				version = 0.1.23;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.25;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		393FAE5D2ACFF15C00190D49 /* TossPayments */ = {
+		397A7F322AE76D1A00AB9913 /* TossPayments */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 393FAE5C2ACFF15C00190D49 /* XCRemoteSwiftPackageReference "payment-sdk-ios" */;
+			package = 397A7F312AE76D1A00AB9913 /* XCRemoteSwiftPackageReference "payment-sdk-ios" */;
 			productName = TossPayments;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 393FAE3D2ACFF13500190D49 /* Project object */;
+	rootObject = 397A7F122AE76CBB00AB9913 /* Project object */;
 }

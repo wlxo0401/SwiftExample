@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  TossPaymentWidgetSample
+//  TossPaymentWidget
 //
-//  Created by 김지태 on 2023/10/06.
+//  Created by 김지태 on 10/24/23.
 //
 
 import UIKit

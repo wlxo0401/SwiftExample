@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tosspayments/payment-sdk-ios.git",
       "state" : {
-        "revision" : "6216f5d5945dc9783cc5ec5af5267e97f031667f",
-        "version" : "0.1.23"
+        "revision" : "50e90ff801206d5a35f9f81ce3079e0e5c35bfc3",
+        "version" : "0.1.25"
       }
     }
   ],
