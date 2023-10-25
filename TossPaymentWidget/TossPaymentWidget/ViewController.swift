@@ -18,11 +18,19 @@ class ViewController: UIViewController {
      위젯 생성
      clientKey - 내 상점의 클라이언트 키 즉 운영하는 서비스에 발부된 키
      customerKey - 고객 ID, 직접 생성해야하며 유출되면 악의적으로 사용할 수 있어 UUID와 같은 충분히 무작위적인 고유 값을 추천
+     brandpay - 브랜드 페이를 사용하기 위함, Access Token 발급에 사용되는 리다이렉트 URL
      */
     private lazy var widget: PaymentWidget = PaymentWidget(
         clientKey: "test_ck_D5GePWvyJnrK0W0k6q8gLzN97Eoq",
         customerKey: "EPUx4U0_zvKaGMZkA7uF_"
     )
+    
+    // 브랜드 페이 옵션 적용
+//    private lazy var widget: PaymentWidget = PaymentWidget(
+//        clientKey: "test_ck_D5GePWvyJnrK0W0k6q8gLzN97Eoq",
+//        customerKey: "EPUx4U0_zvKaGMZkA7uF_",
+//        options: PaymentWidget.Options(brandpay: PaymentWidget.BrandPay(redirectURL: "http://my-store.com/brandpay/callback-auth"))
+//    )
     
     // 결제 버튼
     private lazy var button = UIButton()
@@ -68,6 +76,10 @@ class ViewController: UIViewController {
 
         // 결제 위젯을 랜더링하는 메서드
         let paymentMethods = self.widget.renderPaymentMethods(amount: PaymentMethodWidget.Amount(value: 10000))
+        // 브랜드 페이 옵션 적용
+//        let paymentMethods = self.widget.renderPaymentMethods(amount: PaymentMethodWidget.Amount(value: 10000),
+//                                                              options: PaymentMethodWidget.Options(variantKey: "BRANDPAY"))
+        
         // 이용약관을 랜더링하는 메서드
         let agreement = self.widget.renderAgreement()
 
