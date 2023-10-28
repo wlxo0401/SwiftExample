@@ -50,10 +50,39 @@ enum TabBarPage {
     }
 
     // Add tab icon value
-    
+    func pageIcon() -> UIImage {
+        switch self {
+        case .ready:
+            return UIImage(systemName: "square.and.arrow.down.fill")!
+        case .steady:
+            return UIImage(systemName: "pencil")!
+        case .go:
+            return UIImage(systemName: "scribble.variable")!
+        }
+    }
     
     // Add tab icon selected / deselected color
-    
+    func pageSelectedColor() -> UIColor {
+        switch self {
+        case .ready:
+            return .red
+        case .steady:
+            return .blue
+        case .go:
+            return .green
+        }
+    }
+
+    func pageDeSelectedColor() -> UIColor {
+        switch self {
+        case .ready:
+            return .purple
+        case .steady:
+            return .orange
+        case .go:
+            return .yellow
+        }
+    }
     
     // etc
 }
@@ -100,16 +129,24 @@ class TabCoordinator: NSObject, Coordinator {
     }
     
     private func prepareTabBarController(withTabControllers tabControllers: [UIViewController]) {
-        /// Set delegate for UITabBarController
+        // Set delegate for UITabBarController
         self.tabBarController.delegate = self
-        /// Assign page's controllers
+        // Assign page's controllers
         self.tabBarController.setViewControllers(tabControllers, animated: true)
-        /// Let set index
+        // Let set index
         self.tabBarController.selectedIndex = TabBarPage.ready.pageOrderNumber()
-        /// Styling
+        // Styling
         self.tabBarController.tabBar.isTranslucent = false
+        // 선택했을 때 색상
+        self.tabBarController.tabBar.tintColor = .black
+        // 선택 안되었을 때 색상
+        self.tabBarController.tabBar.unselectedItemTintColor = .gray
         
-        /// In this step, we attach tabBarController to navigation controller associated with this coordanator
+        // 탭바 배경색상
+        self.tabBarController.tabBar.backgroundColor = .white
+        
+        
+        // In this step, we attach tabBarController to navigation controller associated with this coordanator
         self.navigationController.viewControllers = [self.tabBarController]
     }
     
@@ -118,12 +155,12 @@ class TabCoordinator: NSObject, Coordinator {
         let navController = UINavigationController()
         navController.setNavigationBarHidden(false, animated: false)
 
+        let tabBarItem: UITabBarItem = UITabBarItem.init(title: page.pageTitleValue(),
+                                                         image: page.pageIcon(),
+                                                         tag: page.pageOrderNumber())
         
         
-        
-        navController.tabBarItem = UITabBarItem.init(title: page.pageTitleValue(),
-                                                     image: nil,
-                                                     tag: page.pageOrderNumber())
+        navController.tabBarItem = tabBarItem
 
         switch page {
         case .ready:
