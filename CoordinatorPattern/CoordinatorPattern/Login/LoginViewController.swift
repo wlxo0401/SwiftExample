@@ -9,7 +9,6 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    
     var didSendEventClosure: ((LoginViewController.Event) -> Void)?
 
     private let loginButton: UIButton = {
@@ -59,5 +58,6 @@ class LoginViewController: UIViewController {
 extension LoginViewController {
     enum Event {
         case login
+        case finish
     }
 }

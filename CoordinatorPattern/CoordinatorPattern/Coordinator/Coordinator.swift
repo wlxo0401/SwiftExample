@@ -6,7 +6,6 @@
 //
 
 import Foundation
-
 import UIKit
 
 protocol Coordinator: AnyObject {
@@ -29,8 +28,8 @@ protocol Coordinator: AnyObject {
 extension Coordinator {
     
     func finish() {
-        childCoordinators.removeAll()
-        finishDelegate?.coordinatorDidFinish(childCoordinator: self)
+        self.childCoordinators.removeAll()
+        self.finishDelegate?.coordinatorDidFinish(childCoordinator: self)
     }
 }
  

@@ -38,8 +38,12 @@ class LoginCoordinator: LoginCoordinatorProtocol {
         print("LoginCoordinator: showLoginViewController")
         let loginVC: LoginViewController = .init()
         loginVC.didSendEventClosure = { [weak self] event in
-            print("이거 왜 안되노...")
-            self?.finish()
+            print("이거 왜 안되... \(event)")
+            
+            if event == .finish {
+                self?.finish()
+            }
+            
         }
         
         self.navigationController.pushViewController(loginVC, animated: true)
