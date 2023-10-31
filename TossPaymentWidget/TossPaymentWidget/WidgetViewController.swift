@@ -8,7 +8,7 @@
 import UIKit
 import TossPayments
 
-class ViewController: UIViewController {
+class WidgetViewController: UIViewController {
 
     // UI가 담길 공간
     public lazy var scrollView = UIScrollView()
@@ -105,7 +105,7 @@ class ViewController: UIViewController {
 
 
 
-extension ViewController: TossPaymentsDelegate {
+extension WidgetViewController: TossPaymentsDelegate {
     // 결제가 성공한 경우
     public func handleSuccessResult(_ success: TossPaymentsResult.Success) {
         print("결제 성공")
@@ -123,7 +123,7 @@ extension ViewController: TossPaymentsDelegate {
     }
 }
 
-extension ViewController: TossPaymentsWidgetStatusDelegate {
+extension WidgetViewController: TossPaymentsWidgetStatusDelegate {
     // 결제위젯 렌더링이 완료되면 호출되는 메서드
     public func didReceivedLoad(_ name: String) {
         print("결제위젯 렌더링 완료 ")
