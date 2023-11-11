@@ -1,37 +1,19 @@
 //
 //  AppDelegate.swift
-//  GCDWebServerEx
+//  UIKitCombineMVVM
 //
-//  Created by 김지태 on 11/6/23.
+//  Created by 김지태 on 11/10/23.
 //
 
 import UIKit
 
-// 기기 웹 서버
-import GCDWebServer
-
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    // 웹 서버
-    let webServer = GCDWebServer()
-    
+
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        // 웹서버 파일 경로
-        let subdir = Bundle.main.resourceURL!.appendingPathComponent("dist").path
-        // 웹 서버 셋팅
-        self.webServer.addGETHandler(forBasePath: "/",
-                                     directoryPath: subdir,
-                                     indexFilename: "index.html",
-                                     cacheAge: 3600,
-                                     allowRangeRequests: true)
-        // 웹 서버 실행
-        self.webServer.start(withPort: 8889, bonjourName: "GCD Web Server")
-        
-        
-        self.webServer.stop()
         return true
     }
 

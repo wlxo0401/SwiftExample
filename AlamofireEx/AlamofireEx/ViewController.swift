@@ -80,10 +80,3 @@ class ViewController: UIViewController {
         return nil
     }
 }
-
-
-
-
-
-//let headers: HTTPHeaders = ["Content-Type": "application/json",
-//                            "Accept": "application/json"]
