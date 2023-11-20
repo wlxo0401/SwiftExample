@@ -16,6 +16,7 @@
 		3979B8B92AFE2E0E00821D82 /* TodosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3979B8B82AFE2E0E00821D82 /* TodosService.swift */; };
 		3979B8BB2AFE2EE400821D82 /* TodosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3979B8BA2AFE2EE400821D82 /* TodosModel.swift */; };
 		3979B8BE2AFE304B00821D82 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3979B8BD2AFE304B00821D82 /* ViewModel.swift */; };
+		39B694572B01EF3D00689BC3 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B694562B01EF3D00689BC3 /* ActivityIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		3979B8B82AFE2E0E00821D82 /* TodosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosService.swift; sourceTree = "<group>"; };
 		3979B8BA2AFE2EE400821D82 /* TodosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosModel.swift; sourceTree = "<group>"; };
 		3979B8BD2AFE304B00821D82 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		39B694562B01EF3D00689BC3 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +64,11 @@
 		3979B89D2AFE130A00821D82 /* UIKitCombineMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				3979B8BC2AFE304200821D82 /* View */,
-				3979B8B52AFE2DCB00821D82 /* API */,
 				3979B89E2AFE130A00821D82 /* AppDelegate.swift */,
 				3979B8A02AFE130A00821D82 /* SceneDelegate.swift */,
+				39B694562B01EF3D00689BC3 /* ActivityIndicatorView.swift */,
+				3979B8BC2AFE304200821D82 /* View */,
+				3979B8B52AFE2DCB00821D82 /* API */,
 				3979B8A72AFE130B00821D82 /* Assets.xcassets */,
 				3979B8A92AFE130B00821D82 /* LaunchScreen.storyboard */,
 				3979B8AC2AFE130B00821D82 /* Info.plist */,
@@ -189,6 +192,7 @@
 				3979B8A12AFE130A00821D82 /* SceneDelegate.swift in Sources */,
 				3979B8BE2AFE304B00821D82 /* ViewModel.swift in Sources */,
 				3979B8B92AFE2E0E00821D82 /* TodosService.swift in Sources */,
+				39B694572B01EF3D00689BC3 /* ActivityIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,15 +8,12 @@ import UIKit
 import Combine
 
 class ViewController: UIViewController {
-
     // API를 통해서 불러온 데이터 개수 표시 Label
-    lazy var tempLabel: UILabel = UILabel()
-    
+    lazy var todoCountLabel: UILabel = UILabel()
     // 더 불러오기 버튼
-    lazy var tempButton: UIButton = UIButton()
-    // 로딩
+    lazy var apiButton: UIButton = UIButton()
+    // 로딩 UI
     lazy var activityIndicationView = ActivityIndicatorView(style: .medium)
-    
     
     // ViewModel
     private let viewModel: ViewModel
@@ -39,66 +36,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        // 기본 화면 설정
-        self.view.backgroundColor = .white
-        self.view.addSubview(self.tempLabel)
-        self.view.addSubview(self.tempButton)
-        self.view.addSubview(self.activityIndicationView)
+        // UI 설정
+        self.setUI()
         
-        // UILabel AutoLayout 적용
-        self.tempLabel.translatesAutoresizingMaskIntoConstraints = false
-        self.tempButton.translatesAutoresizingMaskIntoConstraints = false
-        self.activityIndicationView.translatesAutoresizingMaskIntoConstraints = false
-        
-        self.tempButton.backgroundColor = UIColor.black
-        self.tempButton.setTitleColor(.white, for: .normal)
-        self.tempButton.setTitle("더 불러오기", for: .normal)
-        self.tempButton.addAction(UIAction { _ in
-            self.viewModel.getData()
-        }, for: .touchUpInside)
-        
-        // 제약 조건
-        NSLayoutConstraint.activate([
-            self.tempLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            self.tempLabel.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
-            self.tempLabel.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 40.0),
-            self.tempLabel.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -40.0),
-            self.tempLabel.heightAnchor.constraint(equalToConstant: 30.0),
-            
-            self.tempButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            self.tempButton.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 40.0),
-            self.tempButton.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 40.0),
-            self.tempButton.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -40.0),
-            self.tempButton.heightAnchor.constraint(equalToConstant: 30.0),
-            
-            self.activityIndicationView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            self.activityIndicationView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
-            self.activityIndicationView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 40.0),
-            self.activityIndicationView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -40.0),
-            self.activityIndicationView.heightAnchor.constraint(equalToConstant: 30.0),
-        ])
-        
-        // UILabel 초기 값 설정
-        self.tempLabel.text = "데이터 개수 : "
-        
-        
+        // Combine 설정
         self.setUpBindings()
-        
-        // 데이터 불러오기
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//            self.viewModel.getData()
-        }
     }
     
     // 바인딩 설정(함수 명은 예제를 그대로 복사한 것임.)
     private func setUpBindings() {
         func bindViewModelToView() {
             
+            // Count가 변경되면
             self.viewModel.$count
                 .receive(on: RunLoop.main)
                 .sink(receiveValue: { [weak self] text in
                     DispatchQueue.main.async {
-                        self?.tempLabel.text = "데이터 개수 : \(text)"
+                        self?.todoCountLabel.text = "데이터 개수 : \(text)"
                     }
                 })
                 .store(in: &bindings)
@@ -119,6 +73,7 @@ class ViewController: UIViewController {
                 }
             }
             
+            // State를 구독
             self.viewModel.$state
                 .receive(on: RunLoop.main)
                 .sink(receiveValue: stateValueHandler)
@@ -131,8 +86,63 @@ class ViewController: UIViewController {
             self.viewModel.getData()
         }
     }
+}
+
+// MARK: UI
+extension ViewController {
+    private func setUI() {
+        // 기본 화면 설정
+        self.view.backgroundColor = .white
+        
+        // UI 추가
+        self.view.addSubview(self.todoCountLabel)
+        self.view.addSubview(self.apiButton)
+        self.view.addSubview(self.activityIndicationView)
+        
+        // UILabel AutoLayout 사용
+        self.todoCountLabel.translatesAutoresizingMaskIntoConstraints = false
+        self.apiButton.translatesAutoresizingMaskIntoConstraints = false
+        self.activityIndicationView.translatesAutoresizingMaskIntoConstraints = false
+        
+        // 더 불러오기 버튼
+        self.apiButton.backgroundColor = UIColor.black
+        self.apiButton.setTitleColor(.white, for: .normal)
+        self.apiButton.setTitle("더 불러오기", for: .normal)
+        self.apiButton.addAction(UIAction { _ in
+            // 데이터 불러오기
+            self.viewModel.getData()
+        }, for: .touchUpInside)
+        
+        // 제약 조건
+        NSLayoutConstraint.activate([
+            // 데이터 개수 Label UI 설정
+            self.todoCountLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            self.todoCountLabel.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+            self.todoCountLabel.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 40.0),
+            self.todoCountLabel.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -40.0),
+            self.todoCountLabel.heightAnchor.constraint(equalToConstant: 30.0),
+            
+            // 더 불러오기 Button UI 설정
+            self.apiButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            self.apiButton.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 40.0),
+            self.apiButton.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 40.0),
+            self.apiButton.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -40.0),
+            self.apiButton.heightAnchor.constraint(equalToConstant: 30.0),
+            
+            // 로딩 Indicator View UI 설정
+            self.activityIndicationView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            self.activityIndicationView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+            self.activityIndicationView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            self.activityIndicationView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            self.activityIndicationView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            self.activityIndicationView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+        ])
+        
+        // UILabel 초기 값 설정
+        self.todoCountLabel.text = "데이터 개수 : "
+    }
     
-    // 에러 처리 팝업
+    // 에러 팝업
     private func showError(_ error: Error) {
         let alertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "OK", style: .default) { [unowned self] _ in
@@ -142,18 +152,18 @@ class ViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
+    // 로딩 보이기
     func startLoading() {
-        activityIndicationView.isHidden = false
-        activityIndicationView.startAnimating()
+        self.activityIndicationView.isHidden = false
+        self.activityIndicationView.startAnimating()
     }
     
+    // 로딩 숨기기
     func finishLoading() {
-        activityIndicationView.isHidden = true
-        activityIndicationView.stopAnimating()
+        self.activityIndicationView.isHidden = true
+        self.activityIndicationView.stopAnimating()
     }
 }
-
-
 
 
 
@@ -186,21 +196,3 @@ class ViewController: UIViewController {
 //                })
 //                .store(in: &cancellables)
 
-final class ActivityIndicatorView: UIActivityIndicatorView {
-    override init(style: UIActivityIndicatorView.Style) {
-        super.init(style: style)
-        
-        setUp()
-    }
-    
-    required init(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    private func setUp() {
-        color = .white
-        backgroundColor = .darkGray
-        layer.cornerRadius = 5.0
-        hidesWhenStopped = true
-    }
-}
