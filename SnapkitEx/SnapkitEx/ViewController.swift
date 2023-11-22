@@ -36,27 +36,43 @@ class ViewController: UIViewController {
     private func setUI() {
         // 슈퍼 View에 파랑색 View 추가
         self.view.addSubview(self.myView)
-        self.myView.addSubview(self.secondView)
+        self.view.addSubview(self.secondView)
         
         // SnapKit 적용
         self.myView.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.height.equalTo(30)
+            make.top.equalToSuperview()
             make.leading.equalToSuperview()
             make.trailing.equalToSuperview()
+            make.height.equalTo(200)
         }
         
         // SnapKit 적용
         self.secondView.snp.makeConstraints { make in
-            make.top.equalToSuperview()
-            make.bottom.equalToSuperview()
-            make.leading.equalToSuperview()
-            make.trailing.equalToSuperview()
+            make.top.equalTo(self.myView.snp.bottom).offset(-50)
+            make.leading.equalToSuperview().offset(-50)
+            make.trailing.equalToSuperview().offset(50)
+            make.bottom.equalToSuperview().offset(50)
         }
     }
 }
 
 
+
+//// SnapKit 적용
+//self.myView.snp.makeConstraints { make in
+//    make.top.equalTo(self.view.snp.top)
+//    make.leading.equalTo(self.view.snp.leading)
+//    make.trailing.equalTo(self.view.snp.trailing)
+//    make.height.equalTo(200)
+//}
+//
+//// SnapKit 적용
+//self.secondView.snp.makeConstraints { make in
+//    make.top.equalTo(self.myView.snp.bottom)
+//    make.leading.equalTo(self.view.snp.leading)
+//    make.trailing.equalTo(self.view.snp.trailing)
+//    make.bottom.equalTo(self.view.snp.bottom)
+//}
 
 
 //
