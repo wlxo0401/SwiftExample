@@ -39,19 +39,16 @@ class ViewController: UIViewController {
         self.view.addSubview(self.secondView)
         
         // SnapKit 적용
-        self.myView.snp.makeConstraints { make in
-            make.top.equalToSuperview()
-            make.leading.equalToSuperview()
-            make.trailing.equalToSuperview()
-            make.height.equalTo(200)
+        self.myView.snp.makeConstraints {
+            $0.top.leading.equalToSuperview()
+            $0.width.height.equalTo(300)
         }
         
         // SnapKit 적용
-        self.secondView.snp.makeConstraints { make in
-            make.top.equalTo(self.myView.snp.bottom).offset(-50)
-            make.leading.equalToSuperview().offset(-50)
-            make.trailing.equalToSuperview().offset(50)
-            make.bottom.equalToSuperview().offset(50)
+        self.secondView.snp.makeConstraints {
+            $0.width.height.equalTo(100)
+            $0.top.equalTo(self.myView.snp.bottom).offset(50)
+            $0.centerX.equalTo(self.myView)
         }
     }
 }
@@ -66,13 +63,7 @@ class ViewController: UIViewController {
 //    make.height.equalTo(200)
 //}
 //
-//// SnapKit 적용
-//self.secondView.snp.makeConstraints { make in
-//    make.top.equalTo(self.myView.snp.bottom)
-//    make.leading.equalTo(self.view.snp.leading)
-//    make.trailing.equalTo(self.view.snp.trailing)
-//    make.bottom.equalTo(self.view.snp.bottom)
-//}
+
 
 
 //
